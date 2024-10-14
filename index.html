@@ -1,31 +1,33 @@
 <!DOCTYPE HTML>
-<html>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+<html lang="en">
 
 <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex is just some guy.">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Page Title and Favicon -->
+    <title>Alex Hendel</title>
+    <link rel="icon" href="AH_icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0EFGWYP0G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
-    
       gtag('config', 'G-E0EFGWYP0G');
     </script>
-    
-    <title>Alex Hendel</title>
-    <link rel="icon" href="AH_icon.png"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Alex is just some guy.">
 
-
+    <!-- Styles -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -33,16 +35,18 @@
 
         .strata {
             padding: 5% 5% 2% 5%;
-            color: #213444
+            color: #213444;
         }
 
-        p,
-        li {
+        p, li {
             font-size: 18px;
+            color: #213444;
         }
 
         h1 {
             font-size: 48px;
+            font-weight: 800;
+            color: #213444;
         }
 
         a {
@@ -55,60 +59,65 @@
             color: #F0A07C;
         }
 
-        li {
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+        }
+
+        .footer {
+            background-color: #213444;
+            color: white;
+            padding: 20px 5%;
+        }
+
+        .footer h1 {
+            font-size: 36px;
+        }
+
+        .footer ul li {
             color: white;
         }
     </style>
 </head>
 
 <body>
-    <div style="background-color: white;" class="strata">
-        <div class="container" style="margin: 0; padding: 0;">
+    <div class="strata">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="AH_Headshot.jpeg" style="width: 100%;">
+                <div class="col-lg-4 image-container">
+                    <img src="AH_Headshot.jpeg" alt="Alex Hendel Headshot">
                 </div>
                 <div class="col-lg-8">
-                    <h1 style="color: #213444; font-weight: 800; font-size: 56px;">Hi! I'm Alex.</h1>
-
-                    <p> I am a public interest data scientist supporting government’s use of data to address pressing issues and improve the delivery of public services. </p>
-                    <p> In my free time I love to read, climb, play music, and fix/ride/look at bikes. </p>
-                    <p> Some of my past work includes: </p>
-                    <ul style="color: #213444>
-                      <li>Designing a federal department's first RAG implementation to improve access to key documents enterprise-wide</li>
-                      <li>Using generative AI as a data extraction solution for 40+ data points from over 100k unstructured documents</li>
-                      <li>Integrating dozens of data sources across a federal department to provide insight into real-time operations for the first time</li>
+                    <h1>Hi! I'm Alex.</h1>
+                    <p>I am a public interest data scientist supporting government’s use of data to address pressing issues and improve the delivery of public services.</p>
+                    <p>In my free time, I love to read, climb, play music, and fix/ride/look at bikes.</p>
+                    <p>Some of my past work includes:</p>
+                    <ul>
+                        <li>Designing a federal department's first RAG implementation to improve access to key documents enterprise-wide.</li>
+                        <li>Using generative AI as a data extraction solution for 40+ data points from over 100k unstructured documents.</li>
+                        <li>Integrating dozens of data sources across a federal department to provide insight into real-time operations for the first time.</li>
                     </ul>
-
                     <hr>
-                    </hr>
                     <p>
-                        <font style="color: #F0A07C; font-weight: 800;">You can get in touch at
-                            <a href="mailto:alexhendel@gmail.com"
-                                style="color: #F0A07C; text-decoration: underline; ">alexhendel@gmail.com</a>.</font>
+                        <strong style="color: #F0A07C;">You can get in touch at
+                            <a href="mailto:alexhendel@gmail.com">alexhendel@gmail.com</a>.
+                        </strong>
                     </p>
-                    <p> I'm based in Washington, DC. </p>
+                    <p>I'm based in Washington, DC.</p>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-    <div style="background-color: #213444; min-height: 50%;" class="strata">
-        <h1 style="color: white; font-weight: 800;">Links to my...</h1>
-        <p style="color: white;">
-            <ul>
-                <li>...<a href="https://github.com/alex-hendel/">Github</a>
-                </li>
-                <li>...<a href="https://www.linkedin.com/in/alex-hendel/">Linkedin<a>
 
-            </ul>
-        </p>
-
-
-
-
+    <div class="footer">
+        <h1>Links to my...</h1>
+        <ul>
+            <li>...<a href="https://github.com/alex-hendel/">GitHub</a></li>
+            <li>...<a href="https://www.linkedin.com/in/alex-hendel/">LinkedIn</a></li>
+        </ul>
     </div>
 </body>
+
 </html>
