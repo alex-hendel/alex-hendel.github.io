@@ -1,0 +1,14 @@
+[
+  {
+    "id": "taipei",
+    "name": "Taipei",
+    "file": "trips/taipei.json",
+    "count": 14
+  },
+  {
+    "id": "taiwan",
+    "name": "Taiwan",
+    "file": "trips/taiwan.json",
+    "count": 14
+  }
+]
