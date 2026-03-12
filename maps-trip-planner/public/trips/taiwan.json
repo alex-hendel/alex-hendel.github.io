@@ -1,0 +1,161 @@
+{
+  "trip": "Taiwan",
+  "region": "Taipei, Taiwan",
+  "generated": "2026-03-12T01:25:38.545139+00:00",
+  "places": [
+    {
+      "id": "place_1396992391",
+      "name": "Taipei 101",
+      "lat": 25.0338352,
+      "lng": 121.5644995,
+      "address": "信義路五段, 信義區, 臺北市, 信義商圈",
+      "category": "Unknown",
+      "cost": null,
+      "hours": "Mo-Th 11:00-21:30; Fr-Sa 11:00-22:00",
+      "note": ""
+    },
+    {
+      "id": "place_1356187354",
+      "name": "Shilin Night Market",
+      "lat": 25.088389,
+      "lng": 121.5242986,
+      "address": "基河路, 士林區, 臺北市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_345745722",
+      "name": "Shida Night Market",
+      "lat": 25.0241559,
+      "lng": 121.529142,
+      "address": "師大路, 大安區, 臺北市, 古亭",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1440506433",
+      "name": "Ningxia Night Market",
+      "lat": 25.0561877,
+      "lng": 121.515222,
+      "address": "重慶北路二段73巷, 大同區, 臺北市, 建成",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3222320573",
+      "name": "Nanmen Market",
+      "lat": 25.0323081,
+      "lng": 121.5232604,
+      "address": "愛國東路, 大安區, 臺北市, 龍匣口",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2571669003",
+      "name": "Shuanglian Market",
+      "lat": 25.0570485,
+      "lng": 121.5165023,
+      "address": "民生西路, 大同區, 臺北市, 建成",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2223330394",
+      "name": "Chifeng Street",
+      "lat": 25.0552168,
+      "lng": 121.5196301,
+      "address": "赤峰街, 大同區, 臺北市, 建成",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1670600710",
+      "name": "National Palace Museum",
+      "lat": 25.1015744,
+      "lng": 121.5488623,
+      "address": "至善路二段, 士林區, 臺北市, 石角",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3263219699",
+      "name": "Dadaocheng",
+      "lat": 25.0584461,
+      "lng": 121.5118999,
+      "address": "臺北市, 大稻埕, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1016710528",
+      "name": "Elephant mountain",
+      "lat": 25.0265411,
+      "lng": 121.575542,
+      "address": "臺北市, 臺灣",
+      "category": "Outdoors",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3351463108",
+      "name": "Chiang Kai-Shek Memorial Hall",
+      "lat": 25.0345759,
+      "lng": 121.5217812,
+      "address": "中山南路, 中正區, 臺北市, 龍匣口",
+      "category": "Unknown",
+      "cost": null,
+      "hours": "09:00-18:00",
+      "note": ""
+    },
+    {
+      "id": "place_2948601493",
+      "name": "Wanhua District",
+      "lat": 25.0319327,
+      "lng": 121.4993322,
+      "address": "萬華區, 臺北市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_151206529",
+      "name": "Xiamen",
+      "lat": 25.026447,
+      "lng": 121.5178804,
+      "address": "廈門街, 中正區, 臺北市, 古亭",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3251604119",
+      "name": "Longshan Temple",
+      "lat": 25.0352844,
+      "lng": 121.4995813,
+      "address": "西園路一段, 萬華區, 臺北市, 下崁",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    }
+  ]
+}
