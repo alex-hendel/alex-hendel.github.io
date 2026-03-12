@@ -1,0 +1,73 @@
+{
+  "trip": "Taichung",
+  "region": "Taichung, Taiwan",
+  "generated": "2026-03-12T21:40:55.639902+00:00",
+  "places": [
+    {
+      "id": "place_723098752",
+      "name": "Fengjia Night Market",
+      "lat": 24.1773506,
+      "lng": 120.6466003,
+      "address": "華夏巷東四弄, 西屯區, 臺中市, 水湳經貿園區",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Taiwan's largest night market, open from late afternoon until 1am"
+    },
+    {
+      "id": "place_363793231",
+      "name": "National Taiwan Museum of Fine Arts",
+      "lat": 24.1414905,
+      "lng": 120.663268,
+      "address": "五權西路一段, 西區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "One of Asia's largest fine arts museums, free entry, strong Taiwanese art collection"
+    },
+    {
+      "id": "place_3780458749",
+      "name": "Rainbow Village",
+      "lat": 24.1335938,
+      "lng": 120.6110976,
+      "address": "忠勇路, 南屯區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tiny village painted floor-to-ceiling in colourful murals by a 90-year-old veteran"
+    },
+    {
+      "id": "place_2413610446",
+      "name": "Miyahara",
+      "lat": 24.1378509,
+      "lng": 120.6835697,
+      "address": "中山路, 中區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Historic ophthalmology clinic turned premium ice cream and dessert parlour with ornate interior"
+    },
+    {
+      "id": "place_569248747",
+      "name": "Gaomei Wetlands",
+      "lat": 24.2956,
+      "lng": 120.5441,
+      "address": "臨港路六段, 清水區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tidal wetland with a wooden boardwalk walkway, good for sunset and birdwatching"
+    },
+    {
+      "id": "place_1995937967",
+      "name": "Calligraphy Greenway",
+      "lat": 24.1554912,
+      "lng": 120.6652669,
+      "address": "西區, 臺中市, 臺灣",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": "1.5km linear park through the city centre with public art and a lively cafe strip"
+    }
+  ]
+}
