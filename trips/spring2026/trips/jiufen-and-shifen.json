@@ -1,7 +1,7 @@
 {
   "trip": "Jiufen and Shifen",
   "region": "New Taipei, Taiwan",
-  "generated": "2026-03-12T21:36:37.643808+00:00",
+  "generated": "2026-03-12T23:04:53.586685+00:00",
   "places": [
     {
       "id": "place_2594170188",
@@ -35,6 +35,50 @@
       "cost": null,
       "hours": null,
       "note": "Taiwan's widest waterfall, 40m across, short paved walk from the old street"
+    },
+    {
+      "id": "place_4053188283",
+      "name": "Golden Waterfall",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Naturally yellow-orange waterfall from acidic mining runoff, vivid and photogenic"
+    },
+    {
+      "id": "place_2523560930",
+      "name": "Jinguashi Gold Ecological Park",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Former gold mine turned heritage park and museum in the hills above the coast"
+    },
+    {
+      "id": "place_1220759972",
+      "name": "Houtong Cat Village",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tiny village overrun with friendly cats, a stop on the same Pingxi rail line"
+    },
+    {
+      "id": "place_4285008065",
+      "name": "Sandiaoling Waterfall Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "5–10km hiking trail linking multiple waterfalls, an alternative route into Shifen"
     }
   ]
 }

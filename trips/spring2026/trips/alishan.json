@@ -1,7 +1,7 @@
 {
   "trip": "Alishan",
   "region": "Alishan, Chiayi County, Taiwan",
-  "generated": "2026-03-12T21:42:47.222431+00:00",
+  "generated": "2026-03-12T23:09:26.069725+00:00",
   "places": [
     {
       "id": "place_4129284531",
@@ -48,6 +48,28 @@
       "note": "Separate 2,700-year-old red cypress, quieter than the main Giant Tree Trail"
     },
     {
+      "id": "place_1205373700",
+      "name": "Three Generation Tree",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Trio of intertwined cypress trees at different life stages — living, hollowed, and dead"
+    },
+    {
+      "id": "place_1106882082",
+      "name": "Sister Ponds",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Twin mirror-like ponds in the forest with a wooden walkway between them"
+    },
+    {
       "id": "place_1097973574",
       "name": "Shouzhen Temple",
       "lat": 23.517639,
@@ -70,6 +92,17 @@
       "note": "Hike along the old Mianyue Forest Railway route through misty old-growth forest"
     },
     {
+      "id": "place_632587248",
+      "name": "Chushan-Tashan Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Adventurous trail with wooden trestle bridges over gorges and abandoned railway tunnels"
+    },
+    {
       "id": "place_1869662260",
       "name": "Duegaoyue Trail",
       "lat": 23.5211497,
@@ -79,6 +112,17 @@
       "cost": null,
       "hours": null,
       "note": "Less-crowded alternative sunrise hiking trail, 1–2 hours, fewer crowds than Zhushan"
+    },
+    {
+      "id": "place_2439682568",
+      "name": "Fenqihu Station",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Charming mountain town on the forest railway line, famous for railway bento boxes"
     }
   ]
 }
