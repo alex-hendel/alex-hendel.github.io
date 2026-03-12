@@ -9,17 +9,30 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 })
 
-function makeIcon(color, isSelected) {
-  // Draw a colored circle SVG as the marker
+const CATEGORY_EMOJI = {
+  'Food & Drink':       '🍽️',
+  'Museums & Galleries':'🖼️',
+  'Temples & History':  '⛩️',
+  'Culture & Sights':   '🏛️',
+  'Nature & Trails':    '🏔️',
+  'Parks & Gardens':    '🌳',
+  'Shopping':           '🛍️',
+  'Entertainment':      '🎡',
+  'Accommodation':      '🏨',
+  'Nightlife':          '🎉',
+  'Wellness':           '🧘',
+  'Transport':          '🚆',
+  'Unknown':            '📍',
+}
+
+function makeIcon(category, isSelected) {
+  const emoji = CATEGORY_EMOJI[category] ?? '📍'
   const size = isSelected ? 32 : 24
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" fill="${color}" stroke="white" stroke-width="2.5"/>
-      ${isSelected ? '<circle cx="12" cy="12" r="4" fill="white"/>' : ''}
-    </svg>
-  `
+  const shadow = isSelected
+    ? 'drop-shadow(0 0 4px rgba(0,0,0,0.6))'
+    : 'drop-shadow(0 1px 2px rgba(0,0,0,0.35))'
   return L.divIcon({
-    html: svg,
+    html: `<div style="font-size:${size}px;line-height:1;filter:${shadow};">${emoji}</div>`,
     className: '',
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
@@ -64,7 +77,7 @@ export default function MapView({ places, selectedId, onSelect }) {
       if (place.lat == null || place.lng == null) continue
 
       const isSelected = place.id === selectedId
-      const icon = makeIcon(place.iconColor || '#4A90D9', isSelected)
+      const icon = makeIcon(place.category, isSelected)
 
       if (markersRef.current[place.id]) {
         markersRef.current[place.id].setIcon(icon)

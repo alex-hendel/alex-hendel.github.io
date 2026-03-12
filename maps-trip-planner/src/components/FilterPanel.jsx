@@ -119,13 +119,17 @@ export default function FilterPanel({ filters, onChange, totalCount, filteredCou
 }
 
 const CATEGORY_EMOJI = {
-  'Food & Drink': '🍽️',
-  'Culture & Sights': '🏛️',
-  'Outdoors': '🌿',
-  'Shopping': '🛍️',
-  'Accommodation': '🏨',
-  'Nightlife': '🎉',
-  'Transport': '🚆',
-  'Wellness': '🧘',
-  'Unknown': '📍',
+  'Food & Drink':       '🍽️',
+  'Museums & Galleries':'🖼️',
+  'Temples & History':  '⛩️',
+  'Culture & Sights':   '🏛️',
+  'Nature & Trails':    '🏔️',
+  'Parks & Gardens':    '🌳',
+  'Shopping':           '🛍️',
+  'Entertainment':      '🎡',
+  'Accommodation':      '🏨',
+  'Nightlife':          '🎉',
+  'Wellness':           '🧘',
+  'Transport':          '🚆',
+  'Unknown':            '📍',
 }

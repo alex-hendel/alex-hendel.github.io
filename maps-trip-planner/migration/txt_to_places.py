@@ -62,21 +62,60 @@ RETRY_BASE_S   = 5.0      # first retry waits 5s, then 10s, 20s, 40s
 # ── Category mapping (same as frontend osmEnrichment.js) ─────────────────────
 
 TAG_CATEGORY_RULES = [
-    ({"amenity": ["restaurant","cafe","bar","pub","fast_food","food_court","ice_cream","bakery"]}, "Food & Drink"),
-    ({"tourism": ["museum","gallery","attraction","artwork","viewpoint","monument","heritage"]},    "Culture & Sights"),
-    ({"amenity": ["theatre","cinema","arts_centre","library"]},                                    "Culture & Sights"),
-    ({"leisure": ["park","garden","nature_reserve","playground"]},                                 "Outdoors"),
-    ({"natural": ["beach","peak","waterfall","hot_spring","cave_entrance"]},                       "Outdoors"),
-    ({"tourism": ["camp_site","picnic_site"]},                                                     "Outdoors"),
-    ({"shop":    True},                                                                            "Shopping"),
-    ({"amenity": ["marketplace"]},                                                                 "Shopping"),
-    ({"tourism": ["hotel","hostel","motel","guest_house","apartment"]},                            "Accommodation"),
-    ({"amenity": ["nightclub","casino"]},                                                          "Nightlife"),
-    ({"amenity": ["bus_station","ferry_terminal"]},                                                "Transport"),
-    ({"railway": ["station","halt"]},                                                              "Transport"),
-    ({"aeroway": ["terminal"]},                                                                    "Transport"),
-    ({"leisure": ["spa","sauna","fitness_centre","swimming_pool"]},                                "Wellness"),
-    ({"amenity": ["spa"]},                                                                         "Wellness"),
+    # Food & Drink
+    ({"amenity": ["restaurant","cafe","bar","pub","fast_food","food_court",
+                  "ice_cream","bakery","biergarten","juice_bar","tea_room"]},  "Food & Drink"),
+
+    # Museums & Galleries — before Culture & Sights to take precedence
+    ({"tourism": ["museum","gallery"]},                                        "Museums & Galleries"),
+    ({"amenity": ["arts_centre"]},                                             "Museums & Galleries"),
+
+    # Temples & History — place_of_worship first, then historic catch-all
+    ({"amenity": ["place_of_worship"]},                                        "Temples & History"),
+    ({"building": ["temple","shrine","cathedral","chapel","mosque"]},          "Temples & History"),
+    ({"historic": ["temple","shrine","castle","ruins","ruin","monument",
+                   "memorial","archaeological_site","manor","fort",
+                   "city_gate","tower","building"]},                           "Temples & History"),
+    ({"historic": True},                                                       "Temples & History"),
+
+    # Entertainment — specific enough to place before Culture & Sights
+    ({"aerialway": ["gondola","cable_car","chair_lift","mixed_lift"]},         "Entertainment"),
+    ({"tourism":   ["theme_park","zoo","aquarium"]},                           "Entertainment"),
+    ({"leisure":   ["amusement_arcade","escape_game","water_park",
+                    "amusement_park","miniature_golf"]},                       "Entertainment"),
+
+    # Culture & Sights — general attractions after more specific categories
+    ({"tourism": ["attraction","viewpoint","artwork","monument","heritage"]},  "Culture & Sights"),
+    ({"amenity": ["theatre","cinema","library"]},                              "Culture & Sights"),
+
+    # Nature & Trails — before Parks & Gardens (more specific)
+    ({"natural": ["peak","waterfall","hot_spring","cave_entrance",
+                  "beach","bay","spring"]},                                    "Nature & Trails"),
+    ({"leisure": ["nature_reserve"]},                                          "Nature & Trails"),
+
+    # Parks & Gardens
+    ({"leisure": ["park","garden","playground"]},                              "Parks & Gardens"),
+    ({"tourism": ["picnic_site","camp_site"]},                                 "Parks & Gardens"),
+
+    # Shopping — marketplace stays here; OSM tags don't reliably distinguish
+    # night markets from general markets, so both land in Shopping
+    ({"shop":    True},                                                        "Shopping"),
+    ({"amenity": ["marketplace"]},                                             "Shopping"),
+
+    # Accommodation
+    ({"tourism": ["hotel","hostel","motel","guest_house","apartment"]},        "Accommodation"),
+
+    # Nightlife
+    ({"amenity": ["nightclub","casino"]},                                      "Nightlife"),
+
+    # Transport
+    ({"amenity": ["bus_station","ferry_terminal"]},                            "Transport"),
+    ({"railway": ["station","halt"]},                                          "Transport"),
+    ({"aeroway": ["terminal"]},                                                "Transport"),
+
+    # Wellness
+    ({"leisure": ["spa","sauna","fitness_centre","swimming_pool"]},            "Wellness"),
+    ({"amenity": ["spa"]},                                                     "Wellness"),
 ]
 
 def tags_to_category(tags: dict) -> str:
