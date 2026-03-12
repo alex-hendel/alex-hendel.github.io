@@ -3,31 +3,31 @@
     "id": "alishan",
     "name": "Alishan",
     "file": "trips/alishan.json",
-    "count": 8
+    "count": 7
   },
   {
     "id": "chiayi",
     "name": "Chiayi",
     "file": "trips/chiayi.json",
-    "count": 3
+    "count": 0
   },
   {
     "id": "guangzhou",
     "name": "Guangzhou",
     "file": "trips/guangzhou.json",
-    "count": 15
+    "count": 14
   },
   {
     "id": "hong-kong",
     "name": "Hong Kong",
     "file": "trips/hong-kong.json",
-    "count": 20
+    "count": 17
   },
   {
     "id": "jiufen-and-shifen",
     "name": "Jiufen and Shifen",
     "file": "trips/jiufen-and-shifen.json",
-    "count": 5
+    "count": 3
   },
   {
     "id": "kaohsiung",
@@ -45,13 +45,13 @@
     "id": "taichung",
     "name": "Taichung",
     "file": "trips/taichung.json",
-    "count": 7
+    "count": 6
   },
   {
     "id": "taipei",
     "name": "Taipei",
     "file": "trips/taipei.json",
-    "count": 22
+    "count": 21
   },
   {
     "id": "taiwan",

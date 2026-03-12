@@ -135,8 +135,19 @@ def _do_request(req: Request, timeout: int) -> dict | list | None:
                 print(f"  ⚠  HTTP error: {e}")
                 return None
 
+        except TimeoutError as e:
+            # Raw socket timeout — not wrapped by urllib, treat as transient
+            if attempt < MAX_RETRIES:
+                wait = RETRY_BASE_S * (2 ** attempt)
+                print(f"  ↻  Timeout — retrying in {wait:.0f}s "
+                      f"(attempt {attempt + 1}/{MAX_RETRIES})")
+                time.sleep(wait)
+            else:
+                print(f"  ⚠  Timeout after {MAX_RETRIES} retries: {e}")
+                return None
+
         except (URLError, json.JSONDecodeError) as e:
-            print(f"  ⚠  HTTP error: {e}")
+            print(f"  ⚠  Network error: {e}")
             return None
 
     return None
@@ -145,7 +156,7 @@ def _do_request(req: Request, timeout: int) -> dict | list | None:
 def http_get_json(url: str, params: dict | None = None) -> dict | list | None:
     full_url = url + ("?" + urlencode(params) if params else "")
     req = Request(full_url, headers={"User-Agent": USER_AGENT})
-    return _do_request(req, timeout=10)
+    return _do_request(req, timeout=20)
 
 
 def http_post(url: str, body: str, timeout: int = 20) -> dict | None:
@@ -158,19 +169,53 @@ def http_post(url: str, body: str, timeout: int = 20) -> dict | None:
 
 # ── Nominatim geocoding ───────────────────────────────────────────────────────
 
-def geocode(name: str, region: str) -> dict | None:
-    """Returns best Nominatim result or None."""
-    # Try name + region first for best disambiguation
-    for query in [f"{name}, {region}", name]:
-        results = http_get_json(NOMINATIM_URL, {
-            "q": query,
-            "format": "json",
-            "limit": 3,
-            "addressdetails": 1,
-        })
+def get_region_viewbox(region: str) -> str | None:
+    """
+    Geocode the region itself and return a Nominatim viewbox string
+    (west,north,east,south) that can be used to constrain place searches.
+    Returns None if the region can't be resolved.
+    """
+    results = http_get_json(NOMINATIM_URL, {
+        "q": region,
+        "format": "json",
+        "limit": 1,
+    })
+    time.sleep(NOMINATIM_DELAY_S)
+    if results and results[0].get("boundingbox"):
+        south, north, west, east = results[0]["boundingbox"]
+        return f"{west},{north},{east},{south}"  # Nominatim viewbox format
+    return None
+
+
+def geocode(name: str, region: str, viewbox: str | None = None) -> dict | None:
+    """
+    Returns the best Nominatim result for name within region, or None.
+    If a viewbox is provided, searches are bounded to that box first,
+    with an unbounded fallback in case the place sits just outside it.
+    """
+    params = {
+        "q":            f"{name}, {region}",
+        "format":       "json",
+        "limit":        3,
+        "addressdetails": 1,
+    }
+    if viewbox:
+        params["viewbox"] = viewbox
+        params["bounded"] = 1  # hard geographic constraint
+
+    results = http_get_json(NOMINATIM_URL, params)
+    time.sleep(NOMINATIM_DELAY_S)
+    if results:
+        return results[0]
+
+    # Fallback: drop the bounding constraint (handles places near region edges)
+    if viewbox:
+        params["bounded"] = 0
+        results = http_get_json(NOMINATIM_URL, params)
         time.sleep(NOMINATIM_DELAY_S)
         if results:
             return results[0]
+
     return None
 
 # ── Overpass enrichment ───────────────────────────────────────────────────────
@@ -247,10 +292,17 @@ def process_places(names: list[tuple[str, str]], region: str) -> list[dict]:
     places = []
     total = len(names)
 
+    print(f"  🔍 Resolving region bounding box for '{region}'…")
+    viewbox = get_region_viewbox(region)
+    if viewbox:
+        print(f"  📍 Searches constrained to: {viewbox}\n")
+    else:
+        print(f"  ⚠  Could not resolve region bounding box — searches will be unconstrained\n")
+
     for i, (name, note) in enumerate(names, 1):
         print(f"  [{i}/{total}] {name}" + (f"  📝 {note[:40]}" if note else ""))
 
-        geo = geocode(name, region)
+        geo = geocode(name, region, viewbox=viewbox)
         if not geo:
             print(f"         ✗ Could not geocode — skipping")
             continue

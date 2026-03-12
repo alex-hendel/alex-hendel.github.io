@@ -1,7 +1,7 @@
 {
   "trip": "Taipei",
   "region": "Taipei, Taiwan",
-  "generated": "2026-03-12T02:39:33.972348+00:00",
+  "generated": "2026-03-12T21:57:33.229066+00:00",
   "places": [
     {
       "id": "place_1396992391",
@@ -12,7 +12,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": "Mo-Th 11:00-21:30; Fr-Sa 11:00-22:00",
-      "note": ""
+      "note": "Iconic skyscraper with observation deck and skybar"
     },
     {
       "id": "place_309833056",
@@ -23,7 +23,7 @@
       "category": "Outdoors",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Short hike with panoramic views of Taipei 101 at sunset"
     },
     {
       "id": "place_3351463108",
@@ -34,7 +34,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": "09:00-18:00",
-      "note": ""
+      "note": "Grand national monument with hourly guard change ceremony"
     },
     {
       "id": "place_72593696",
@@ -45,7 +45,7 @@
       "category": "Food & Drink",
       "cost": null,
       "hours": "Mo-Su 11:30-20:50",
-      "note": ""
+      "note": "Large plaza flanking CKS Memorial, two classical gates"
     },
     {
       "id": "place_1670600710",
@@ -56,7 +56,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "World-class collection of Chinese imperial art and artifacts"
     },
     {
       "id": "place_3251604119",
@@ -67,7 +67,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Taipei's oldest and most atmospheric Buddhist-Taoist temple"
     },
     {
       "id": "place_3263219699",
@@ -78,7 +78,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "19th century merchant district with preserved historic streetscapes"
     },
     {
       "id": "place_3336534062",
@@ -89,7 +89,7 @@
       "category": "Shopping",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Historic trading street known for teas, herbs, and dried goods"
     },
     {
       "id": "place_2223330394",
@@ -100,7 +100,7 @@
       "category": "Shopping",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Trendy alley lined with independent cafes, vintage shops, and boutiques"
     },
     {
       "id": "place_1356187354",
@@ -111,7 +111,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Taipei's largest and most famous night market"
     },
     {
       "id": "place_1440506433",
@@ -122,7 +122,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Smaller, more local night market known for traditional Taiwanese snacks"
     },
     {
       "id": "place_345745722",
@@ -133,7 +133,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Student-area market near National Taiwan Normal University"
     },
     {
       "id": "place_3222320573",
@@ -144,7 +144,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Daytime traditional market popular with locals for fresh produce and delicacies"
     },
     {
       "id": "place_2571669003",
@@ -155,7 +155,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Low-key morning market near Shuanglian MRT"
     },
     {
       "id": "place_1424372770",
@@ -166,7 +166,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Geothermal spring district 30 min from central Taipei by MRT"
     },
     {
       "id": "place_262518415",
@@ -177,7 +177,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Central city park popular for jogging, outdoor dance classes, and picnics"
     },
     {
       "id": "place_3118280325",
@@ -188,18 +188,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
-    },
-    {
-      "id": "place_1074923639",
-      "name": "Treasure Hill Artist Village",
-      "lat": 25.0106203,
-      "lng": 121.5322365,
-      "address": "汀州路三段230巷, 中正區, 臺北市, 公館",
-      "category": "Unknown",
-      "cost": null,
-      "hours": null,
-      "note": ""
+      "note": "Pedestrian shopping and youth culture district in Wanhua"
     },
     {
       "id": "place_194238976",
@@ -210,7 +199,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Ornate Taoist temple at the entrance of Raohe Night Market"
     },
     {
       "id": "place_134539923",
@@ -221,18 +210,18 @@
       "category": "Food & Drink",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Tree-lined street of Japanese colonial-era wooden houses in Da'an District"
     },
     {
       "id": "place_34555067",
       "name": "Maokong Gondola",
       "lat": 24.9873695,
       "lng": 121.5919276,
-      "address": "猴山坑古道, 文山區, 臺北市, 臺灣",
+      "address": "指南路三段32巷, 文山區, 臺北市, 臺灣",
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Aerial gondola to hillside tea plantations with city views"
     },
     {
       "id": "place_4284087193",
@@ -243,7 +232,7 @@
       "category": "Unknown",
       "cost": null,
       "hours": null,
-      "note": ""
+      "note": "Hilltop Taoist temple accessible via Maokong Gondola, great views"
     }
   ]
 }
