@@ -48,8 +48,8 @@ export default function PlaceCard({ place, onClick, isSelected }) {
         )}
         {place.isOpen === true && <Badge color="emerald">Open now</Badge>}
         {place.isOpen === false && <Badge color="red">Closed</Badge>}
-        {!place.enriched && (
-          <Badge color="gray">Information not found</Badge>
+        {place.category === 'Unknown' && !place.cost && !place.hours && (
+          <Badge color="gray">No details found</Badge>
         )}
       </div>
 
@@ -60,7 +60,7 @@ export default function PlaceCard({ place, onClick, isSelected }) {
         </p>
       )}
 
-      {/* Note from My Maps */}
+      {/* Note */}
       {place.note && (
         <p className="text-xs text-gray-500 mt-1 line-clamp-2">{place.note}</p>
       )}
