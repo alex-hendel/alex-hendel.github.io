@@ -1,8 +1,19 @@
 {
   "trip": "Guangzhou",
   "region": "Guangzhou, China",
-  "generated": "2026-03-12T21:46:38.664226+00:00",
+  "generated": "2026-03-12T23:12:20.086651+00:00",
   "places": [
+    {
+      "id": "place_2457981792",
+      "name": "Shamian Island",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Small colonial-era island with tree-lined streets and European-style architecture"
+    },
     {
       "id": "place_258885425",
       "name": "Beijing Road",
@@ -48,6 +59,17 @@
       "note": "Zaha Hadid-designed performing arts centre on the Pearl River, striking architecture"
     },
     {
+      "id": "place_3464364003",
+      "name": "Mausoleum of the Nanyue King",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Intact 2,000-year-old Western Han Dynasty royal tomb with an attached museum"
+    },
+    {
       "id": "place_261644701",
       "name": "Yuexiu Park",
       "lat": 23.1425136,
@@ -57,6 +79,17 @@
       "cost": null,
       "hours": null,
       "note": "Guangzhou's largest urban park, home to the Five Rams Statue and the city museum"
+    },
+    {
+      "id": "place_4066122241",
+      "name": "Five Rams Statue",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Iconic bronze sculpture of five rams, the symbol of Guangzhou, set in Yuexiu Park"
     },
     {
       "id": "place_560588815",
@@ -70,6 +103,17 @@
       "note": "16th century red pagoda inside Yuexiu Park, now the Guangzhou City Museum"
     },
     {
+      "id": "place_2648556668",
+      "name": "Qingping Street Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Sprawling market covering seafood, agricultural produce, traditional medicine, and more"
+    },
+    {
       "id": "place_2374037222",
       "name": "Sun Yat-sen Memorial Hall",
       "lat": 23.1361698,
@@ -79,6 +123,17 @@
       "cost": null,
       "hours": null,
       "note": "Octagonal hall and museum on the site of his presidential palace from the 1920s"
+    },
+    {
+      "id": "place_1817905063",
+      "name": "Dafo Temple",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Ancient Buddhist temple founded in 917 AD in the heart of old Guangzhou"
     },
     {
       "id": "place_1620098743",
@@ -119,7 +174,7 @@
       "lat": 23.189633,
       "lng": 113.2930153,
       "address": "白云区, 广东省, 中国",
-      "category": "Outdoors",
+      "category": "Nature & Trails",
       "cost": null,
       "hours": null,
       "note": "Cloud-shrouded mountain north of the city with scenic trails and teahouses"
@@ -134,6 +189,17 @@
       "cost": null,
       "hours": null,
       "note": "One of the world's largest all-stone Gothic cathedrals, completed 1888"
+    },
+    {
+      "id": "place_4141752633",
+      "name": "Yuyin Mountain Villa",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Classical Lingnan-style garden villa on the southern outskirts of Guangzhou"
     },
     {
       "id": "place_2601262406",

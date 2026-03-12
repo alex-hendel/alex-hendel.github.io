@@ -1,7 +1,7 @@
 {
   "trip": "Kaohsiung",
   "region": "Kaohsiung, Taiwan",
-  "generated": "2026-03-12T21:34:44.172562+00:00",
+  "generated": "2026-03-12T23:03:15.286331+00:00",
   "places": [
     {
       "id": "place_3028477684",
@@ -41,7 +41,7 @@
       "name": "Kaohsiung Music Center",
       "lat": 22.6183599,
       "lng": 120.2921417,
-      "address": "新田路, 苓雅區, 高雄市, 臺灣",
+      "address": "海邊路, 苓雅區, 高雄市, 臺灣",
       "category": "Culture & Sights",
       "cost": null,
       "hours": null,

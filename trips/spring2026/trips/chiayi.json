@@ -1,6 +1,73 @@
 {
   "trip": "Chiayi",
   "region": "Chiayi City, Taiwan",
-  "generated": "2026-03-12T21:35:07.015193+00:00",
-  "places": []
+  "generated": "2026-03-12T23:03:38.311525+00:00",
+  "places": [
+    {
+      "id": "place_357362424",
+      "name": "Wenhua Road Night Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Chiayi's main night market, good spot to try the city's signature turkey rice"
+    },
+    {
+      "id": "place_2637141996",
+      "name": "Hinoki Village",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Cluster of beautifully preserved Japanese-era cypress worker dormitories turned cultural park"
+    },
+    {
+      "id": "place_402384925",
+      "name": "Chiayi Park",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Central city park with ponds, pavilions, and a Japanese Shinto shrine remnant"
+    },
+    {
+      "id": "place_4272682445",
+      "name": "Sun-Shooting Tower",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Pagoda tower in Chiayi Park with views over the city"
+    },
+    {
+      "id": "place_2884911023",
+      "name": "Former Chiayi Prison",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Japanese colonial prison with rare fan-shaped cell block architecture, now a heritage site"
+    },
+    {
+      "id": "place_2103394183",
+      "name": "Alishan Forest Railway Chiayi Station",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Historic departure point for the scenic narrow-gauge railway up to Alishan"
+    }
+  ]
 }

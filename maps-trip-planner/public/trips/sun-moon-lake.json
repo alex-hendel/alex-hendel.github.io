@@ -1,7 +1,7 @@
 {
   "trip": "Sun Moon Lake",
   "region": "Nantou County, Taiwan",
-  "generated": "2026-03-12T21:38:44.515192+00:00",
+  "generated": "2026-03-12T23:06:39.653032+00:00",
   "places": [
     {
       "id": "place_2441166299",
@@ -64,7 +64,7 @@
       "lat": 23.8561772,
       "lng": 120.9428912,
       "address": "水蛙頭步道, 日月村, 魚池鄉, 臺灣",
-      "category": "Unknown",
+      "category": "Entertainment",
       "cost": null,
       "hours": "Mo-Fr 10:30-16:00; Sa-Su 10:00-16:30",
       "note": "Cable car connecting the lake to the Formosa Aboriginal Culture Village"
@@ -79,6 +79,28 @@
       "cost": null,
       "hours": null,
       "note": "Quirky lakeside sculptures of nine stacked frogs on a quiet wooden pier"
+    },
+    {
+      "id": "place_2766939257",
+      "name": "Water Frog Head Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Peaceful boardwalk trail through bamboo to the Nine Frogs Stack, no tour buses"
+    },
+    {
+      "id": "place_3059484541",
+      "name": "Mt Maolan Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "4.6km forest trail above the lake accessible from Shuishe, good for a morning hike"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "trip": "Taipei",
   "region": "Taipei, Taiwan",
-  "generated": "2026-03-12T21:57:33.229066+00:00",
+  "generated": "2026-03-12T23:21:58.904182+00:00",
   "places": [
     {
       "id": "place_1396992391",
@@ -20,7 +20,7 @@
       "lat": 25.0265411,
       "lng": 121.575542,
       "address": "臺北市, 臺灣",
-      "category": "Outdoors",
+      "category": "Nature & Trails",
       "cost": null,
       "hours": null,
       "note": "Short hike with panoramic views of Taipei 101 at sunset"
@@ -52,7 +52,7 @@
       "name": "National Palace Museum",
       "lat": 25.1015744,
       "lng": 121.5488623,
-      "address": "至善路二段, 士林區, 臺北市, 臺灣",
+      "address": "至善路二段, 士林區, 臺北市, 石角",
       "category": "Unknown",
       "cost": null,
       "hours": null,
@@ -103,6 +103,17 @@
       "note": "Trendy alley lined with independent cafes, vintage shops, and boutiques"
     },
     {
+      "id": "place_8121022",
+      "name": "Raohe Street Night Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Popular, food-focused night market with covered arcade"
+    },
+    {
       "id": "place_1356187354",
       "name": "Shilin Night Market",
       "lat": 25.088389,
@@ -118,7 +129,7 @@
       "name": "Ningxia Night Market",
       "lat": 25.0561877,
       "lng": 121.515222,
-      "address": "重慶北路二段97巷, 大同區, 臺北市, 大稻埕",
+      "address": "重慶北路二段73巷, 大同區, 臺北市, 建成",
       "category": "Unknown",
       "cost": null,
       "hours": null,
@@ -129,11 +140,22 @@
       "name": "Shida Night Market",
       "lat": 25.0241559,
       "lng": 121.529142,
-      "address": "師大路, 大安區, 臺北市, 古亭",
+      "address": "溫州街16巷, 大安區, 臺北市, 古亭",
       "category": "Unknown",
       "cost": null,
       "hours": null,
       "note": "Student-area market near National Taiwan Normal University"
+    },
+    {
+      "id": "place_314650758",
+      "name": "Huaxi Street Night Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Old-school market in Wanhua, known for snake and exotic foods"
     },
     {
       "id": "place_3222320573",
@@ -169,11 +191,22 @@
       "note": "Geothermal spring district 30 min from central Taipei by MRT"
     },
     {
+      "id": "place_2894035881",
+      "name": "Wulai Hot Springs",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Indigenous Atayal village and hot spring resort ~1hr south of Taipei"
+    },
+    {
       "id": "place_262518415",
       "name": "Da'an Park",
       "lat": 25.0296931,
       "lng": 121.5358242,
-      "address": "和平東路二段, 大安區, 臺北市, 古亭",
+      "address": "大安區, 臺北市, 東區商圈, 臺灣",
       "category": "Unknown",
       "cost": null,
       "hours": null,
@@ -189,6 +222,17 @@
       "cost": null,
       "hours": null,
       "note": "Pedestrian shopping and youth culture district in Wanhua"
+    },
+    {
+      "id": "place_3059739041",
+      "name": "Treasure Hill Artist Village",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Preserved 1940s veterans' settlement turned artist colony with studios and galleries"
     },
     {
       "id": "place_194238976",
@@ -233,6 +277,17 @@
       "cost": null,
       "hours": null,
       "note": "Hilltop Taoist temple accessible via Maokong Gondola, great views"
+    },
+    {
+      "id": "place_1812174438",
+      "name": "Shiding Thousand Island Lake",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Emerald reservoir lakes in the hills east of Taipei, best viewed from above"
     }
   ]
 }
