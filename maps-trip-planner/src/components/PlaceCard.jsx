@@ -48,6 +48,9 @@ export default function PlaceCard({ place, onClick, isSelected }) {
         )}
         {place.isOpen === true && <Badge color="emerald">Open now</Badge>}
         {place.isOpen === false && <Badge color="red">Closed</Badge>}
+        {place.lat == null && (
+          <Badge color="gray">Location unknown</Badge>
+        )}
         {place.category === 'Unknown' && !place.cost && !place.hours && (
           <Badge color="gray">No details found</Badge>
         )}

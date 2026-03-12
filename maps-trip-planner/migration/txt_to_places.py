@@ -268,8 +268,8 @@ def find_best_osm_match(elements: list, name: str) -> dict | None:
 
 # ── Stable ID (matches frontend kmlParser.js) ─────────────────────────────────
 
-def stable_id(name: str, lat: float, lng: float) -> str:
-    s = f"{name}|{lat:.5f}|{lng:.5f}"
+def stable_id(name: str, lat: float | None, lng: float | None) -> str:
+    s = f"{name}|{lat:.5f}|{lng:.5f}" if lat is not None else name
     h = 0
     for ch in s:
         h = (31 * h + ord(ch)) & 0xFFFFFFFF
@@ -304,7 +304,18 @@ def process_places(names: list[tuple[str, str]], region: str) -> list[dict]:
 
         geo = geocode(name, region, viewbox=viewbox)
         if not geo:
-            print(f"         ✗ Could not geocode — skipping")
+            print(f"         ✗ Could not geocode — adding without coordinates")
+            places.append({
+                "id":       stable_id(name, None, None),
+                "name":     name,
+                "lat":      None,
+                "lng":      None,
+                "address":  None,
+                "category": "Unknown",
+                "cost":     None,
+                "hours":    None,
+                "note":     note,
+            })
             continue
 
         lat = float(geo["lat"])
@@ -421,9 +432,9 @@ def main():
     # Update manifest
     update_manifest(out_dir / "index.json", trip_id, trip_name, len(places))
 
-    skipped = len(names) - len(places)
-    print(f"\n✅  Done: {len(places)} places enriched"
-          + (f", {skipped} skipped (geocoding failed)" if skipped else ""))
+    unlocated = sum(1 for p in places if p["lat"] is None)
+    print(f"\n✅  Done: {len(places)} places written"
+          + (f" ({unlocated} without coordinates)" if unlocated else ""))
     print(f"   → {trip_file}")
     print(f"\nNext: commit public/trips/ and push to deploy.")
 

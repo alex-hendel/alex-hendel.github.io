@@ -59,8 +59,10 @@ export default function MapView({ places, selectedId, onSelect }) {
       }
     }
 
-    // Add or update markers
+    // Add or update markers (skip places with no coordinates)
     for (const place of places) {
+      if (place.lat == null || place.lng == null) continue
+
       const isSelected = place.id === selectedId
       const icon = makeIcon(place.iconColor || '#4A90D9', isSelected)
 
@@ -77,9 +79,10 @@ export default function MapView({ places, selectedId, onSelect }) {
       }
     }
 
-    // Fit map to visible markers if we have any
-    if (places.length > 0) {
-      const bounds = L.latLngBounds(places.map((p) => [p.lat, p.lng]))
+    // Fit map to visible markers if we have any located places
+    const locatedPlaces = places.filter((p) => p.lat != null && p.lng != null)
+    if (locatedPlaces.length > 0) {
+      const bounds = L.latLngBounds(locatedPlaces.map((p) => [p.lat, p.lng]))
       map.fitBounds(bounds, { padding: [40, 40], maxZoom: 14 })
     }
   }, [places, selectedId, onSelect])
