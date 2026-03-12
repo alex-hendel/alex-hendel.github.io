@@ -1,1 +1,8 @@
 .DS_Store
+
+# Trip planner build artifacts (not deployed directly)
+maps-trip-planner/node_modules/
+maps-trip-planner/dist/
+maps-trip-planner/.env.local
+maps-trip-planner/.env
+maps-trip-planner/vite.config.js.timestamp-*
