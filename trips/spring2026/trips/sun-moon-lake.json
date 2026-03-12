@@ -1,0 +1,106 @@
+{
+  "trip": "Sun Moon Lake",
+  "region": "Nantou County, Taiwan",
+  "generated": "2026-03-12T23:06:39.653032+00:00",
+  "places": [
+    {
+      "id": "place_2441166299",
+      "name": "Wen Wu Temple",
+      "lat": 23.8699557,
+      "lng": 120.9276568,
+      "address": "中正路, 水社村, 魚池鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Spectacular lakeside temple with dragon-flanked entrance staircase and sweeping lake views"
+    },
+    {
+      "id": "place_3750283047",
+      "name": "Xuanzang Temple",
+      "lat": 23.8473031,
+      "lng": 120.9170963,
+      "address": "中正路, 日月村, 魚池鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Buddhist temple on the eastern shore housing relics of the monk Xuanzang"
+    },
+    {
+      "id": "place_3496670039",
+      "name": "Xuanguang Temple",
+      "lat": 23.8521002,
+      "lng": 120.9136523,
+      "address": "中正路, 日月村, 魚池鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Serene lakeside temple, popular starting point for the ferry and cycling routes"
+    },
+    {
+      "id": "place_1333973514",
+      "name": "Ci'en Pagoda",
+      "lat": 23.8419689,
+      "lng": 120.9208011,
+      "address": "慈恩塔產業道路, 日月村, 魚池鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Hilltop pagoda built by Chiang Kai-shek in memory of his mother, best elevated view of the lake"
+    },
+    {
+      "id": "place_4273272881",
+      "name": "Ita Thao Village",
+      "lat": 23.8471039,
+      "lng": 120.9336779,
+      "address": "魚池鄉, 伊達邵 Ita Thao, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Indigenous Thao tribe village with lakeside night market and cultural performances"
+    },
+    {
+      "id": "place_1229323925",
+      "name": "Sun Moon Lake Ropeway",
+      "lat": 23.8561772,
+      "lng": 120.9428912,
+      "address": "水蛙頭步道, 日月村, 魚池鄉, 臺灣",
+      "category": "Entertainment",
+      "cost": null,
+      "hours": "Mo-Fr 10:30-16:00; Sa-Su 10:00-16:30",
+      "note": "Cable car connecting the lake to the Formosa Aboriginal Culture Village"
+    },
+    {
+      "id": "place_140311867",
+      "name": "Nine Frogs Stack",
+      "lat": 23.8589286,
+      "lng": 120.9357653,
+      "address": "注意!一隻蛙水位無法通行, 日月村, 魚池鄉, 臺灣",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": "Quirky lakeside sculptures of nine stacked frogs on a quiet wooden pier"
+    },
+    {
+      "id": "place_2766939257",
+      "name": "Water Frog Head Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Peaceful boardwalk trail through bamboo to the Nine Frogs Stack, no tour buses"
+    },
+    {
+      "id": "place_3059484541",
+      "name": "Mt Maolan Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "4.6km forest trail above the lake accessible from Shuishe, good for a morning hike"
+    }
+  ]
+}

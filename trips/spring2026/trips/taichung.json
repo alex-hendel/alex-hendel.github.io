@@ -1,0 +1,106 @@
+{
+  "trip": "Taichung",
+  "region": "Taichung, Taiwan",
+  "generated": "2026-03-12T23:07:57.488527+00:00",
+  "places": [
+    {
+      "id": "place_723098752",
+      "name": "Fengjia Night Market",
+      "lat": 24.1773506,
+      "lng": 120.6466003,
+      "address": "逢甲路, 西屯區, 臺中市, 水湳經貿園區",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Taiwan's largest night market, open from late afternoon until 1am"
+    },
+    {
+      "id": "place_363793231",
+      "name": "National Taiwan Museum of Fine Arts",
+      "lat": 24.1414905,
+      "lng": 120.663268,
+      "address": "五權西路一段, 西區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "One of Asia's largest fine arts museums, free entry, strong Taiwanese art collection"
+    },
+    {
+      "id": "place_343625284",
+      "name": "Rainbow Village",
+      "lat": 24.1340849,
+      "lng": 120.6102352,
+      "address": "嶺東南路, 南屯區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tiny village painted floor-to-ceiling in colourful murals by a 90-year-old veteran"
+    },
+    {
+      "id": "place_2413610446",
+      "name": "Miyahara",
+      "lat": 24.1378509,
+      "lng": 120.6835697,
+      "address": "中山路, 中區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Historic ophthalmology clinic turned premium ice cream and dessert parlour with ornate interior"
+    },
+    {
+      "id": "place_3187010349",
+      "name": "Shen Ji New Village",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Creative hub in old government dormitories with boutique shops, cafes, and a weekend makers market"
+    },
+    {
+      "id": "place_569248747",
+      "name": "Gaomei Wetlands",
+      "lat": 24.2956,
+      "lng": 120.5441,
+      "address": "臨港路六段, 清水區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tidal wetland with a wooden boardwalk walkway, good for sunset and birdwatching"
+    },
+    {
+      "id": "place_3351255386",
+      "name": "Old Taichung Station",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Beautiful Japanese colonial red-brick station (1917), now a preserved heritage landmark"
+    },
+    {
+      "id": "place_2075725963",
+      "name": "Yizhong Street Night Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Student-oriented night market near National Taichung University of Education"
+    },
+    {
+      "id": "place_1995937967",
+      "name": "Calligraphy Greenway",
+      "lat": 24.1554912,
+      "lng": 120.6652669,
+      "address": "西區, 臺中市, 臺灣",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": "1.5km linear park through the city centre with public art and a lively cafe strip"
+    }
+  ]
+}
