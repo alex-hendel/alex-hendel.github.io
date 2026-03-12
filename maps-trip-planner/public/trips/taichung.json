@@ -1,0 +1,84 @@
+{
+  "trip": "Taichung",
+  "region": "Taichung, Taiwan",
+  "generated": "2026-03-12T02:27:05.256109+00:00",
+  "places": [
+    {
+      "id": "place_723098752",
+      "name": "Fengjia Night Market",
+      "lat": 24.1773506,
+      "lng": 120.6466003,
+      "address": "逢甲路, 西屯區, 臺中市, 水湳經貿園區",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_363793231",
+      "name": "National Taiwan Museum of Fine Arts",
+      "lat": 24.1414905,
+      "lng": 120.663268,
+      "address": "五權西路一段, 西區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_343625284",
+      "name": "Rainbow Village",
+      "lat": 24.1340849,
+      "lng": 120.6102352,
+      "address": "嶺東南路, 南屯區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2413610446",
+      "name": "Miyahara",
+      "lat": 24.1378509,
+      "lng": 120.6835697,
+      "address": "中山路, 中區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1907729080",
+      "name": "Shen Ji New Village",
+      "lat": 36.6387897,
+      "lng": 76.1958712,
+      "address": "达布达尔乡 دەفتەر يېزىسى, 热斯喀木村, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_569248747",
+      "name": "Gaomei Wetlands",
+      "lat": 24.2956,
+      "lng": 120.5441,
+      "address": "臨港路六段, 清水區, 臺中市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_256620426",
+      "name": "Calligraphy Greenway",
+      "lat": 24.1520335,
+      "lng": 120.6631829,
+      "address": "西區, 臺中市, 臺灣",
+      "category": "Shopping",
+      "cost": null,
+      "hours": "24/7",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "trip": "Alishan",
+  "region": "Alishan, Chiayi County, Taiwan",
+  "generated": "2026-03-12T02:28:16.301679+00:00",
+  "places": [
+    {
+      "id": "place_4129284531",
+      "name": "Alishan Station",
+      "lat": 23.5100048,
+      "lng": 120.8042464,
+      "address": "祝山林道, 中正村, 阿里山鄉, 臺灣",
+      "category": "Food & Drink",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_999605999",
+      "name": "Zhushan Sunrise Platform",
+      "lat": 23.5103591,
+      "lng": 120.8236576,
+      "address": "祝山林道, 神木村, 信義鄉, 臺灣",
+      "category": "Transport",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2380527792",
+      "name": "Giant Tree Trail",
+      "lat": 23.5192262,
+      "lng": 120.809402,
+      "address": "巨木群棧道(二), 香林村, 阿里山鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3072129604",
+      "name": "Shuishan Giant Tree",
+      "lat": 23.5050362,
+      "lng": 120.8032741,
+      "address": "水山步道, 中山村, 阿里山鄉, 臺灣",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1097973574",
+      "name": "Shouzhen Temple",
+      "lat": 23.517639,
+      "lng": 120.8106303,
+      "address": "祝山林道支線, 香林村, 阿里山鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2573117542",
+      "name": "Mianyue Line Trail",
+      "lat": 23.5328109,
+      "lng": 120.8050229,
+      "address": "塔山登山步道, 中正村, 阿里山鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1869662260",
+      "name": "Duegaoyue Trail",
+      "lat": 23.5211497,
+      "lng": 120.8222006,
+      "address": "對高岳步道, 神木村, 信義鄉, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1789756288",
+      "name": "Fenqihu Station",
+      "lat": 23.5052757,
+      "lng": 120.6951265,
+      "address": "竹崎鄉, 奮起湖 hobiana, 臺灣",
+      "category": "Transport",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "trip": "Hong Kong",
+  "region": "Hong Kong",
+  "generated": "2026-03-12T02:34:46.426427+00:00",
+  "places": [
+    {
+      "id": "place_3185153432",
+      "name": "Tsim Sha Tsui Promenade",
+      "lat": 22.2994187,
+      "lng": 114.1856485,
+      "address": "油尖旺區 Yau Tsim Mong District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2396034256",
+      "name": "Avenue of Stars",
+      "lat": 22.2941468,
+      "lng": 114.1757887,
+      "address": "梳士巴利道 Salisbury Road, 油尖旺區 Yau Tsim Mong District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_570742678",
+      "name": "M+ Museum",
+      "lat": 22.3010537,
+      "lng": 114.1591472,
+      "address": "博物館道 Museum Drive, 油麻地 Yau Ma Tei, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2648523729",
+      "name": "Hong Kong Palace Museum",
+      "lat": 22.3016491,
+      "lng": 114.1553985,
+      "address": "博物館道 Museum Drive, 油麻地 Yau Ma Tei, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2825457923",
+      "name": "Kowloon Walled City Park",
+      "lat": 22.3321294,
+      "lng": 114.1902445,
+      "address": "九龍城 Kowloon City, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1019569440",
+      "name": "Nan Lian Garden",
+      "lat": 22.3393548,
+      "lng": 114.2048532,
+      "address": "斧山 Hammer Hill, 香港 Hong Kong, 中国",
+      "category": "Outdoors",
+      "cost": "free",
+      "hours": "Mo-Su 07:00-21:00",
+      "note": ""
+    },
+    {
+      "id": "place_3215922089",
+      "name": "Chi Lin Nunnery",
+      "lat": 22.3406734,
+      "lng": 114.2053653,
+      "address": "志蓮道 Chi Lin Drive, 斧山 Hammer Hill, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": "Mo-Su 09:00-16:30",
+      "note": ""
+    },
+    {
+      "id": "place_1996977473",
+      "name": "Victoria Peak",
+      "lat": 22.2760386,
+      "lng": 114.1454573,
+      "address": "香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3846263888",
+      "name": "Man Mo Temple",
+      "lat": 22.2838713,
+      "lng": 114.1501584,
+      "address": "荷李活道 Hollywood Road, 上環 Sheung Wan, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_956666160",
+      "name": "Tai Kwun",
+      "lat": 22.2811562,
+      "lng": 114.154009,
+      "address": "荷李活道 Hollywood Road, 中環 Central, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1538545621",
+      "name": "Monster Building",
+      "lat": 47.4694038,
+      "lng": -122.241421,
+      "address": "Monster Road Southwest, Renton, Washington, United States",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1041028387",
+      "name": "Hong Kong Park",
+      "lat": 22.277418,
+      "lng": 114.1615078,
+      "address": "金鐘 Admiralty, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_217828610",
+      "name": "Ngong Ping 360 Cable Car",
+      "lat": 22.2563267,
+      "lng": 113.9014266,
+      "address": "寶昂路 Po Ngong Drive, 離島區 Islands District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1575201530",
+      "name": "Tian Tan Buddha",
+      "lat": 22.2539595,
+      "lng": 113.905012,
+      "address": "昂平路 Ngong Ping Road, 昂坪 Ngong Ping, 香港 Hong Kong, 昂坪村 Ngong Ping Village",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2672985470",
+      "name": "Po Lin Monastery",
+      "lat": 22.2553298,
+      "lng": 113.9076053,
+      "address": "昂平路 Ngong Ping Road, 離島區 Islands District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_869982477",
+      "name": "Lan Kwai Fong",
+      "lat": 22.280839,
+      "lng": 114.155381,
+      "address": "榮華里 Wing Wah Lane, 中環 Central, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_143360894",
+      "name": "PMQ",
+      "lat": 22.2832741,
+      "lng": 114.15183,
+      "address": "鴨巴甸街 Aberdeen Street, 上環 Sheung Wan, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2254011742",
+      "name": "Dragon's Back Trail",
+      "lat": 41.4746723,
+      "lng": -77.4807713,
+      "address": "Dragon's Back Trail, Brown Township, Pennsylvania, United States",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3101327486",
+      "name": "Cheung Chau Island",
+      "lat": 22.2096247,
+      "lng": 114.0295691,
+      "address": "離島區 Islands District, 香港 Hong Kong, 中国",
+      "category": "Food & Drink",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_4072231005",
+      "name": "Lamma Island",
+      "lat": 22.2094533,
+      "lng": 114.1497273,
+      "address": "香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    }
+  ]
+}

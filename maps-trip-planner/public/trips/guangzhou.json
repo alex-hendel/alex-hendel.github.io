@@ -1,0 +1,172 @@
+{
+  "trip": "Guangzhou",
+  "region": "Guangzhou, China",
+  "generated": "2026-03-12T02:31:24.507774+00:00",
+  "places": [
+    {
+      "id": "place_258885425",
+      "name": "Beijing Road",
+      "lat": 23.1207302,
+      "lng": 113.2646563,
+      "address": "北京路, 人民街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_4018180166",
+      "name": "Canton Tower",
+      "lat": 23.1090145,
+      "lng": 113.3191477,
+      "address": "阅江西路, 赤岗街道, 海珠区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_4080562681",
+      "name": "Guangdong Museum",
+      "lat": 23.1174005,
+      "lng": 113.3214163,
+      "address": "珠江东路, 猎德街道, 天河区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1598928754",
+      "name": "Guangzhou Opera House",
+      "lat": 23.1177657,
+      "lng": 113.3167493,
+      "address": "珠江西路, 猎德街道, 天河区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_261644701",
+      "name": "Yuexiu Park",
+      "lat": 23.1425136,
+      "lng": 113.2604084,
+      "address": "洪桥街道, 越秀区, 广东省, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_560588815",
+      "name": "Zhenhai Tower",
+      "lat": 23.1406034,
+      "lng": 113.2602757,
+      "address": "南越路, 洪桥街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2374037222",
+      "name": "Sun Yat-sen Memorial Hall",
+      "lat": 23.1361698,
+      "lng": 113.2593493,
+      "address": "应元路, 洪桥街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3323774169",
+      "name": "Dafo Temple",
+      "lat": 35.0733337,
+      "lng": 107.992366,
+      "address": "G312, 豳风街道, 彬州市, 咸阳市",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1620098743",
+      "name": "Chen Clan Ancestral Hall",
+      "lat": 23.1298279,
+      "lng": 113.2401325,
+      "address": "陈家祠道, 金花街道, 荔湾区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1260303825",
+      "name": "Yongqing Fang",
+      "lat": 23.1160786,
+      "lng": 113.2359449,
+      "address": "恩宁路, 多宝街道, 荔湾区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2587521377",
+      "name": "Shangxiajiu Pedestrian Street",
+      "lat": 23.1175043,
+      "lng": 113.242931,
+      "address": "下九路, 华林街道, 荔湾区, 广东省",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1840214064",
+      "name": "Baiyun Mountain",
+      "lat": 23.189633,
+      "lng": 113.2930153,
+      "address": "白云区, 广东省, 中国",
+      "category": "Outdoors",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_932311146",
+      "name": "Sacred Heart Cathedral",
+      "lat": 23.1173975,
+      "lng": 113.2547256,
+      "address": "玉子巷, 人民街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_2601262406",
+      "name": "Liurong Temple",
+      "lat": 23.1279962,
+      "lng": 113.2542662,
+      "address": "中山六路, 六榕街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_1325350228",
+      "name": "Guangxiao Temple",
+      "lat": 23.1319174,
+      "lng": 113.2511933,
+      "address": "光孝路, 六榕街道, 越秀区, 广东省",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    }
+  ]
+}

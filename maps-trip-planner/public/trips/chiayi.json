@@ -1,0 +1,40 @@
+{
+  "trip": "Chiayi",
+  "region": "Chiayi City, Taiwan",
+  "generated": "2026-03-12T02:23:23.536352+00:00",
+  "places": [
+    {
+      "id": "place_1001023687",
+      "name": "Wenhua Road Night Market",
+      "lat": 22.7544349,
+      "lng": 121.1493276,
+      "address": "正氣路 (台東觀光夜市-水果街夜市), 文化里, 臺東市, 臺灣",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_3495817002",
+      "name": "Hinoki Village",
+      "lat": 23.4857329,
+      "lng": 120.454568,
+      "address": "林森東路, 東區, 嘉義市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": ""
+    },
+    {
+      "id": "place_624448706",
+      "name": "Chiayi Park",
+      "lat": 23.4820729,
+      "lng": 120.4662391,
+      "address": "東區, 嘉義市, 草地尾, 臺灣",
+      "category": "Unknown",
+      "cost": "free",
+      "hours": null,
+      "note": ""
+    }
+  ]
+}
