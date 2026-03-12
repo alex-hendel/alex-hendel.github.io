@@ -52,11 +52,5 @@
     "name": "Taipei",
     "file": "trips/taipei.json",
     "count": 21
-  },
-  {
-    "id": "taiwan",
-    "name": "Taiwan",
-    "file": "trips/taiwan.json",
-    "count": 14
   }
 ]
