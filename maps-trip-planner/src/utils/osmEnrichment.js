@@ -11,13 +11,17 @@
 
 export const ALL_CATEGORIES = [
   'Food & Drink',
+  'Museums & Galleries',
+  'Temples & History',
   'Culture & Sights',
-  'Outdoors',
+  'Nature & Trails',
+  'Parks & Gardens',
   'Shopping',
+  'Entertainment',
   'Accommodation',
   'Nightlife',
-  'Transport',
   'Wellness',
+  'Transport',
   'Unknown',
 ]
 

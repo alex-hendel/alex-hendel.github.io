@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 // or '/repo-name/' if deploying to username.github.io/repo-name
 export default defineConfig({
   plugins: [react()],
-  base: '/trips/',
+  base: '/trips/spring2026/',
   build: {
-    outDir: '../trips',
+    outDir: '../trips/spring2026',
     emptyOutDir: false,
   },
 })

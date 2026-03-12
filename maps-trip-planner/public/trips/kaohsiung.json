@@ -1,0 +1,62 @@
+{
+  "trip": "Kaohsiung",
+  "region": "Kaohsiung, Taiwan",
+  "generated": "2026-03-12T23:03:15.286331+00:00",
+  "places": [
+    {
+      "id": "place_3028477684",
+      "name": "Formosa Boulevard Station",
+      "lat": 22.6313941,
+      "lng": 120.3018602,
+      "address": "中山一路, 新興區, 高雄市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "MRT station housing the world's largest glass dome art installation, free to enter"
+    },
+    {
+      "id": "place_1131376855",
+      "name": "Liuhe Night Market",
+      "lat": 22.6320713,
+      "lng": 120.2990514,
+      "address": "六合二路, 新興區, 高雄市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Kaohsiung's most accessible tourist night market, famous for papaya milk and seafood"
+    },
+    {
+      "id": "place_2970604061",
+      "name": "Love River",
+      "lat": 22.6515814,
+      "lng": 120.299778,
+      "address": "高雄市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Waterfront promenade along a city canal, lit up at night, with cafes and a cheap cruise"
+    },
+    {
+      "id": "place_1985920986",
+      "name": "Kaohsiung Music Center",
+      "lat": 22.6183599,
+      "lng": 120.2921417,
+      "address": "海邊路, 苓雅區, 高雄市, 臺灣",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": "Striking waterfront concert venue that glows in changing colours after dark"
+    },
+    {
+      "id": "place_1072100860",
+      "name": "Ruifeng Night Market",
+      "lat": 22.6662453,
+      "lng": 120.2993655,
+      "address": "裕誠路, 鼓山區, 高雄市, 臺灣",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Large local night market known for its exceptional density of food stalls"
+    }
+  ]
+}

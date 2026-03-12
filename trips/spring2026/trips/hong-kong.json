@@ -1,0 +1,260 @@
+{
+  "trip": "Hong Kong",
+  "region": "Hong Kong",
+  "generated": "2026-03-12T23:15:30.249113+00:00",
+  "places": [
+    {
+      "id": "place_3185153432",
+      "name": "Tsim Sha Tsui Promenade",
+      "lat": 22.2994187,
+      "lng": 114.1856485,
+      "address": "油尖旺區 Yau Tsim Mong District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Kowloon waterfront with sweeping views of Victoria Harbour and the nightly light show"
+    },
+    {
+      "id": "place_2396034256",
+      "name": "Avenue of Stars",
+      "lat": 22.2941468,
+      "lng": 114.1757887,
+      "address": "梳士巴利道 Salisbury Road, 油尖旺區 Yau Tsim Mong District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Harbourfront walkway honouring Hong Kong cinema legends"
+    },
+    {
+      "id": "place_570742678",
+      "name": "M+ Museum",
+      "lat": 22.3010537,
+      "lng": 114.1591472,
+      "address": "博物館道 Museum Drive, 油麻地 Yau Ma Tei, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "World-class visual culture museum in West Kowloon, strong architecture and design collection"
+    },
+    {
+      "id": "place_2648523729",
+      "name": "Hong Kong Palace Museum",
+      "lat": 22.3016491,
+      "lng": 114.1553985,
+      "address": "博物館道 Museum Drive, 油麻地 Yau Ma Tei, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "West Kowloon museum displaying imperial artifacts on loan from Beijing's Forbidden City"
+    },
+    {
+      "id": "place_2825457923",
+      "name": "Kowloon Walled City Park",
+      "lat": 22.3321294,
+      "lng": 114.1902445,
+      "address": "九龍城 Kowloon City, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Former lawless walled city demolished in 1994, now a peaceful Qing-dynasty-themed park"
+    },
+    {
+      "id": "place_1019569440",
+      "name": "Nan Lian Garden",
+      "lat": 22.3393548,
+      "lng": 114.2048532,
+      "address": "斧山 Hammer Hill, 香港 Hong Kong, 中国",
+      "category": "Parks & Gardens",
+      "cost": "free",
+      "hours": "Mo-Su 07:00-21:00",
+      "note": "Classical Tang-dynasty style garden in Diamond Hill, immaculately maintained"
+    },
+    {
+      "id": "place_3215922089",
+      "name": "Chi Lin Nunnery",
+      "lat": 22.3406734,
+      "lng": 114.2053653,
+      "address": "鳳德道 Fung Tak Road, 鑽石山 Diamond Hill, 香港 Hong Kong, 中国",
+      "category": "Temples & History",
+      "cost": null,
+      "hours": "Mo-Su 09:00-16:30",
+      "note": "Large Buddhist nunnery adjacent to Nan Lian Garden, serene wooden architecture"
+    },
+    {
+      "id": "place_1996977473",
+      "name": "Victoria Peak",
+      "lat": 22.2760386,
+      "lng": 114.1454573,
+      "address": "香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Hong Kong's highest point, accessible by the historic Peak Tram, iconic harbour panorama"
+    },
+    {
+      "id": "place_3956419171",
+      "name": "Peak Tram Lower Terminus",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Historic lower station of the 1888 funicular railway up to Victoria Peak"
+    },
+    {
+      "id": "place_3846263888",
+      "name": "Man Mo Temple",
+      "lat": 22.2838713,
+      "lng": 114.1501584,
+      "address": "荷李活道 Hollywood Road, 上環 Sheung Wan, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "One of Hong Kong's oldest Taoist temples, permanently filled with giant incense coils"
+    },
+    {
+      "id": "place_956666160",
+      "name": "Tai Kwun",
+      "lat": 22.2811562,
+      "lng": 114.154009,
+      "address": "荷李活道 Hollywood Road, 中環 Central, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Former Victorian-era police headquarters and prison turned contemporary arts and culture centre"
+    },
+    {
+      "id": "place_1002145914",
+      "name": "Monster Building",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Massive housing estate in Quarry Bay famous for its dramatic internal courtyard views"
+    },
+    {
+      "id": "place_1041028387",
+      "name": "Hong Kong Park",
+      "lat": 22.277418,
+      "lng": 114.1615078,
+      "address": "金鐘 Admiralty, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Tranquil urban park in the middle of Central with an aviary and conservatory"
+    },
+    {
+      "id": "place_2580215456",
+      "name": "Hong Kong Zoological and Botanical Gardens",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Free hillside gardens with primates, birds, and century-old trees"
+    },
+    {
+      "id": "place_3664306881",
+      "name": "Ngong Ping 360 Cable Car",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Gondola from Tung Chung on Lantau Island up to Ngong Ping village"
+    },
+    {
+      "id": "place_1575201530",
+      "name": "Tian Tan Buddha",
+      "lat": 22.2539595,
+      "lng": 113.905012,
+      "address": "昂平路 Ngong Ping Road, 昂坪 Ngong Ping, 香港 Hong Kong, 昂坪村 Ngong Ping Village",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": "Giant outdoor bronze Buddha statue on Lantau Island, 34 metres tall"
+    },
+    {
+      "id": "place_2672985470",
+      "name": "Po Lin Monastery",
+      "lat": 22.2553298,
+      "lng": 113.9076053,
+      "address": "昂平路 Ngong Ping Road, 離島區 Islands District, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Active Buddhist monastery adjacent to the Tian Tan Buddha, ornate and atmospheric"
+    },
+    {
+      "id": "place_2432281441",
+      "name": "Tai O Fishing Village",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Traditional stilt-house fishing village on the western tip of Lantau Island"
+    },
+    {
+      "id": "place_869982477",
+      "name": "Lan Kwai Fong",
+      "lat": 22.280839,
+      "lng": 114.155381,
+      "address": "中環 Central, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Central district nightlife hub, home to several of Asia's top-ranked cocktail bars"
+    },
+    {
+      "id": "place_143360894",
+      "name": "PMQ",
+      "lat": 22.2832741,
+      "lng": 114.15183,
+      "address": "鴨巴甸街 Aberdeen Street, 上環 Sheung Wan, 香港島 Hong Kong Island, 香港 Hong Kong",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Former Police Married Quarters in Central, now a creative hub with local designer studios and pop-ups"
+    },
+    {
+      "id": "place_2477510062",
+      "name": "Dragon's Back Trail",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "One of Hong Kong's best coastal ridge hikes on Hong Kong Island, panoramic sea views"
+    },
+    {
+      "id": "place_3101327486",
+      "name": "Cheung Chau Island",
+      "lat": 22.2096247,
+      "lng": 114.0295691,
+      "address": "離島區 Islands District, 香港 Hong Kong, 中国",
+      "category": "Food & Drink",
+      "cost": null,
+      "hours": null,
+      "note": "Car-free outlying island with a fishing village, beaches, and a pirate cave"
+    },
+    {
+      "id": "place_4072231005",
+      "name": "Lamma Island",
+      "lat": 22.2094533,
+      "lng": 114.1497273,
+      "address": "香港 Hong Kong, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Laid-back outlying island with seafood restaurants, short hikes, and no high-rises"
+    }
+  ]
+}

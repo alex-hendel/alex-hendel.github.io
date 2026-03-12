@@ -1,13 +1,17 @@
 const CATEGORY_EMOJI = {
-  'Food & Drink': '🍽️',
-  'Culture & Sights': '🏛️',
-  'Outdoors': '🌿',
-  'Shopping': '🛍️',
-  'Accommodation': '🏨',
-  'Nightlife': '🎉',
-  'Transport': '🚆',
-  'Wellness': '🧘',
-  'Unknown': '📍',
+  'Food & Drink':      '🍽️',
+  'Museums & Galleries':'🖼️',
+  'Temples & History': '⛩️',
+  'Culture & Sights':  '🏛️',
+  'Nature & Trails':   '🏔️',
+  'Parks & Gardens':   '🌳',
+  'Shopping':          '🛍️',
+  'Entertainment':     '🎡',
+  'Accommodation':     '🏨',
+  'Nightlife':         '🎉',
+  'Wellness':          '🧘',
+  'Transport':         '🚆',
+  'Unknown':           '📍',
 }
 
 const COST_LABEL = {
@@ -48,8 +52,11 @@ export default function PlaceCard({ place, onClick, isSelected }) {
         )}
         {place.isOpen === true && <Badge color="emerald">Open now</Badge>}
         {place.isOpen === false && <Badge color="red">Closed</Badge>}
-        {!place.enriched && (
-          <Badge color="gray">Information not found</Badge>
+        {place.lat == null && (
+          <Badge color="gray">Location unknown</Badge>
+        )}
+        {place.category === 'Unknown' && !place.cost && !place.hours && (
+          <Badge color="gray">No details found</Badge>
         )}
       </div>
 
@@ -60,7 +67,7 @@ export default function PlaceCard({ place, onClick, isSelected }) {
         </p>
       )}
 
-      {/* Note from My Maps */}
+      {/* Note */}
       {place.note && (
         <p className="text-xs text-gray-500 mt-1 line-clamp-2">{place.note}</p>
       )}

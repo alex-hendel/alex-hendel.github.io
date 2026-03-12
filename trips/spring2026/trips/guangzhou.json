@@ -1,0 +1,227 @@
+{
+  "trip": "Guangzhou",
+  "region": "Guangzhou, China",
+  "generated": "2026-03-12T23:12:20.086651+00:00",
+  "places": [
+    {
+      "id": "place_2457981792",
+      "name": "Shamian Island",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Small colonial-era island with tree-lined streets and European-style architecture"
+    },
+    {
+      "id": "place_258885425",
+      "name": "Beijing Road",
+      "lat": 23.1207302,
+      "lng": 113.2646563,
+      "address": "北京路, 人民街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Pedestrian shopping street built atop excavated ancient road layers visible under glass"
+    },
+    {
+      "id": "place_4018180166",
+      "name": "Canton Tower",
+      "lat": 23.1090145,
+      "lng": 113.3191477,
+      "address": "阅江西路, 赤岗街道, 海珠区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "600m observation and broadcast tower, second tallest in China, lit up spectacularly at night"
+    },
+    {
+      "id": "place_4080562681",
+      "name": "Guangdong Museum",
+      "lat": 23.1174005,
+      "lng": 113.3214163,
+      "address": "珠江东路, 猎德街道, 天河区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Large modern museum covering Cantonese history, art, and natural history"
+    },
+    {
+      "id": "place_1598928754",
+      "name": "Guangzhou Opera House",
+      "lat": 23.1177657,
+      "lng": 113.3167493,
+      "address": "珠江西路, 猎德街道, 天河区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Zaha Hadid-designed performing arts centre on the Pearl River, striking architecture"
+    },
+    {
+      "id": "place_3464364003",
+      "name": "Mausoleum of the Nanyue King",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Intact 2,000-year-old Western Han Dynasty royal tomb with an attached museum"
+    },
+    {
+      "id": "place_261644701",
+      "name": "Yuexiu Park",
+      "lat": 23.1425136,
+      "lng": 113.2604084,
+      "address": "洪桥街道, 越秀区, 广东省, 中国",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Guangzhou's largest urban park, home to the Five Rams Statue and the city museum"
+    },
+    {
+      "id": "place_4066122241",
+      "name": "Five Rams Statue",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Iconic bronze sculpture of five rams, the symbol of Guangzhou, set in Yuexiu Park"
+    },
+    {
+      "id": "place_560588815",
+      "name": "Zhenhai Tower",
+      "lat": 23.1406034,
+      "lng": 113.2602757,
+      "address": "南越路, 洪桥街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "16th century red pagoda inside Yuexiu Park, now the Guangzhou City Museum"
+    },
+    {
+      "id": "place_2648556668",
+      "name": "Qingping Street Market",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Sprawling market covering seafood, agricultural produce, traditional medicine, and more"
+    },
+    {
+      "id": "place_2374037222",
+      "name": "Sun Yat-sen Memorial Hall",
+      "lat": 23.1361698,
+      "lng": 113.2593493,
+      "address": "应元路, 洪桥街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Octagonal hall and museum on the site of his presidential palace from the 1920s"
+    },
+    {
+      "id": "place_1817905063",
+      "name": "Dafo Temple",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Ancient Buddhist temple founded in 917 AD in the heart of old Guangzhou"
+    },
+    {
+      "id": "place_1620098743",
+      "name": "Chen Clan Ancestral Hall",
+      "lat": 23.1298279,
+      "lng": 113.2401325,
+      "address": "陈家祠道, 金花街道, 荔湾区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Elaborate late 19th century ancestral shrine and school with outstanding decorative arts"
+    },
+    {
+      "id": "place_1260303825",
+      "name": "Yongqing Fang",
+      "lat": 23.1160786,
+      "lng": 113.2359449,
+      "address": "恩宁路, 多宝街道, 荔湾区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Restored Qing-era alley now lined with independent bars, coffee shops, and boutiques"
+    },
+    {
+      "id": "place_2587521377",
+      "name": "Shangxiajiu Pedestrian Street",
+      "lat": 23.1175043,
+      "lng": 113.242931,
+      "address": "下九路, 华林街道, 荔湾区, 广东省",
+      "category": "Shopping",
+      "cost": null,
+      "hours": null,
+      "note": "Lively historic street food corridor, best explored along the western half"
+    },
+    {
+      "id": "place_1840214064",
+      "name": "Baiyun Mountain",
+      "lat": 23.189633,
+      "lng": 113.2930153,
+      "address": "白云区, 广东省, 中国",
+      "category": "Nature & Trails",
+      "cost": null,
+      "hours": null,
+      "note": "Cloud-shrouded mountain north of the city with scenic trails and teahouses"
+    },
+    {
+      "id": "place_932311146",
+      "name": "Sacred Heart Cathedral",
+      "lat": 23.1173975,
+      "lng": 113.2547256,
+      "address": "玉子巷, 人民街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "One of the world's largest all-stone Gothic cathedrals, completed 1888"
+    },
+    {
+      "id": "place_4141752633",
+      "name": "Yuyin Mountain Villa",
+      "lat": null,
+      "lng": null,
+      "address": null,
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Classical Lingnan-style garden villa on the southern outskirts of Guangzhou"
+    },
+    {
+      "id": "place_2601262406",
+      "name": "Liurong Temple",
+      "lat": 23.1279962,
+      "lng": 113.2542662,
+      "address": "中山六路, 六榕街道, 越秀区, 广东省",
+      "category": "Unknown",
+      "cost": null,
+      "hours": null,
+      "note": "Temple of Six Banyan Trees, founded 537 AD, with a soaring octagonal pagoda"
+    },
+    {
+      "id": "place_1325350228",
+      "name": "Guangxiao Temple",
+      "lat": 23.1319174,
+      "lng": 113.2511933,
+      "address": "光孝路, 六榕街道, 越秀区, 广东省",
+      "category": "Culture & Sights",
+      "cost": null,
+      "hours": null,
+      "note": "Possibly the oldest temple in Guangdong, known for flower offerings instead of incense"
+    }
+  ]
+}
