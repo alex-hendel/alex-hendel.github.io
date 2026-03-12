@@ -26,6 +26,10 @@ places.txt format — one place per line, blank lines and # comments ignored:
   Shilin Night Market
   # adding more soon
   National Palace Museum
+
+Optional note per place — add a pipe separator followed by free text:
+  Taipei 101 | Best views from observation deck, go on a clear day
+  Elephant Mountain | Free hike, 20 min, go at sunset
 """
 
 import argparse
@@ -239,12 +243,12 @@ def format_address(nominatim_result: dict) -> str:
 
 # ── Main pipeline ─────────────────────────────────────────────────────────────
 
-def process_places(names: list[str], region: str) -> list[dict]:
+def process_places(names: list[tuple[str, str]], region: str) -> list[dict]:
     places = []
     total = len(names)
 
-    for i, name in enumerate(names, 1):
-        print(f"  [{i}/{total}] {name}")
+    for i, (name, note) in enumerate(names, 1):
+        print(f"  [{i}/{total}] {name}" + (f"  📝 {note[:40]}" if note else ""))
 
         geo = geocode(name, region)
         if not geo:
@@ -270,7 +274,7 @@ def process_places(names: list[str], region: str) -> list[dict]:
             "category": enriched["category"],
             "cost":     enriched["cost"],
             "hours":    enriched["hours"],
-            "note":     "",
+            "note":     note,
         })
 
     return places
@@ -281,14 +285,19 @@ def trip_id_from_name(name: str) -> str:
     """'Taipei & New Taipei' → 'taipei-new-taipei'"""
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
-def read_place_names(path: str) -> list[str]:
-    names = []
+def read_place_names(path: str) -> list[tuple[str, str]]:
+    """Returns a list of (name, note) tuples. Note is "" if no pipe separator."""
+    entries = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith("#"):
-                names.append(line)
-    return names
+                if "|" in line:
+                    name, note = line.split("|", 1)
+                    entries.append((name.strip(), note.strip()))
+                else:
+                    entries.append((line, ""))
+    return entries
 
 def update_manifest(index_path: Path, trip_id: str, trip_name: str, count: int):
     manifest = []
