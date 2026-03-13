@@ -16,7 +16,7 @@ const TAG_EMOJI = {
   'Unknown': '📍',
 }
 
-export default function SubmissionList({ submissions, loading, isEmpty }) {
+export default function SubmissionList({ submissions, loading, isEmpty, tripId = '' }) {
   const formatDate = (isoString) => {
     if (!isoString) return ''
     return new Date(isoString).toLocaleDateString(undefined, {
@@ -110,28 +110,35 @@ export default function SubmissionList({ submissions, loading, isEmpty }) {
                       <span>{formatDate(place.submittedAt)}</span>
                     </>
                   )}
-                  {place.lat && place.lng && (
-                    <>
-                      <span>·</span>
-                      <a
-                        href={`https://maps.google.com/?q=${place.lat},${place.lng}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                      >
-                        Google Maps
-                      </a>
-                      <span>·</span>
-                      <a
-                        href={`https://www.openstreetmap.org/?mlat=${place.lat}&mlon=${place.lng}&zoom=17`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                      >
-                        OSM
-                      </a>
-                    </>
+                  {!place.lat && (
+                    <span className="text-amber-500">· no coordinates</span>
                   )}
+                  <span>·</span>
+                  <a
+                    href={
+                      place.lat && place.lng
+                        ? `https://maps.google.com/?q=${place.lat},${place.lng}`
+                        : `https://maps.google.com/maps/search/${encodeURIComponent(`${place.name} ${tripId.replace(/-/g, ' ')}`)}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    Google Maps
+                  </a>
+                  <span>·</span>
+                  <a
+                    href={
+                      place.lat && place.lng
+                        ? `https://www.openstreetmap.org/?mlat=${place.lat}&mlon=${place.lng}&zoom=17`
+                        : `https://www.openstreetmap.org/search?query=${encodeURIComponent(place.name)}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    OSM
+                  </a>
                 </div>
               </div>
             </div>
