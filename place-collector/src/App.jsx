@@ -153,6 +153,7 @@ export default function App() {
                   submissions={filteredSubmissions}
                   loading={loading}
                   isEmpty={filteredSubmissions.length === 0}
+                  tripId={selectedTrip.id}
                 />
               ) : (
                 <div className="bg-white p-6 rounded-lg border border-gray-200 text-center text-gray-500">
