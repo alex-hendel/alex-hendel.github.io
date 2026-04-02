@@ -1846,7 +1846,7 @@
 <div class="sources-grid">
 <div class="source-entry">
 <strong>
-                  GGWash 2026 Democratic Primary Questionnaire
+                  Greater Greater Washington (GGWash) 2026 Democratic Primary Questionnaire
                 </strong>
 <br/>
 <a href="https://ggwash.org" target="_blank">
@@ -1871,6 +1871,15 @@
                   dcfordemocracy.org
                 </a>
 </div>
+<div class="source-entry">
+<strong>
+                  Free DC 2026 Questionnaires
+                </strong>
+<br/>
+<a href="https://freedcproject.org" target="_blank">
+                  freedcproject.org
+                </a>
+</div>
 </div>
 </div>
 </div>
@@ -1879,152 +1888,150 @@
 </div>
 <!-- end page-layout -->
 <script>
-      (function(){
- var activeRace='all', activeSource='all';
- 
- function applyFilter(){
- // Filter cards (both div.card-item wrappers and div.card.card-item GGWash cards)
- document.querySelectorAll('.card-item').forEach(function(item){
- var raceMatch = activeRace==='all' || item.dataset.race===activeRace;
- var sourceMatch = activeSource==='all' || item.dataset.source===activeSource;
- item.classList.toggle('hidden', !(raceMatch && sourceMatch));
- });
- 
- // Show/hide section headers
- document.querySelectorAll('.section-header').forEach(function(hdr){
- var raceMatch = activeRace==='all' || hdr.dataset.race===activeRace;
- var sourceMatch = activeSource==='all' || hdr.dataset.source===activeSource;
- hdr.classList.toggle('hidden', !(raceMatch && sourceMatch));
- });
- 
- // Empty state
- var anyVisible = Array.from(document.querySelectorAll('.card-item')).some(function(i){ return !i.classList.contains('hidden'); });
- var emptyEl = document.getElementById('filter-empty');
- if(emptyEl) emptyEl.classList.toggle('visible', !anyVisible);
- 
- // Scroll to top smoothly
- document.getElementById('filter-bar').scrollIntoView({behavior:'smooth', block:'nearest'});
- }
- 
- document.addEventListener('DOMContentLoaded', function(){
- document.querySelectorAll('.filter-btn').forEach(function(btn){
- btn.addEventListener('click', function(){
- var type=this.dataset.filterType;
- var val=this.dataset.filterVal;
- document.querySelectorAll('.filter-btn[data-filter-type="'+type+'"]').forEach(function(b){
- b.classList.remove('active');
- });
- this.classList.add('active');
- if(type==='race') activeRace=val;
- else activeSource=val;
- applyFilter();
- });
- });
- });
-})();
+(function(){
+  // ── Shared filter state ───────────────────────────────────────────────────
+  var activeRace = 'all', activeSource = 'all';
 
-  
+  // ── TOC setup ─────────────────────────────────────────────────────────────
+  var sectionIds  = ['section-mayor-ggwash','section-mayor-w1d','section-mayor-dc4d','section-mayor-freedc','section-ward1-ggwash','section-ward1-w1d','section-ward1-dc4d'];
+  var sectionKeys = ['mayor-ggwash','mayor-w1d','mayor-dc4d','mayor-freedc','ward1-ggwash','ward1-w1d','ward1-dc4d'];
 
-  // TOC — collapsible sections + scroll spy
-  (function(){
-    var sectionIds = ['section-mayor-ggwash','section-mayor-w1d','section-mayor-dc4d','section-mayor-freedc','section-ward1-ggwash','section-ward1-w1d','section-ward1-dc4d'];
-    var sectionKeys = ['mayor-ggwash','mayor-w1d','mayor-dc4d','mayor-freedc','ward1-ggwash','ward1-w1d','ward1-dc4d'];
-    
-    // Toggle collapse
+  // Collapse/expand TOC drawers on click
+  document.querySelectorAll('.toc-section-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var key      = btn.dataset.tocSection;
+      var list     = document.getElementById('toc-qlist-' + key);
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      list.classList.toggle('open', !expanded);
+    });
+  });
+
+  // Build anchor list (section headers + question cards)
+  var allAnchors = [];
+  sectionIds.forEach(function(sid, i){
+    var el = document.getElementById(sid);
+    if(el) allAnchors.push({el:el, type:'section', key:sectionKeys[i]});
+  });
+  document.querySelectorAll('.toc-q-link').forEach(function(link){
+    var id = link.getAttribute('href').substring(1);
+    var el = document.getElementById(id);
+    if(el) allAnchors.push({el:el, type:'question', link:link, section:link.dataset.section});
+  });
+  // Sort by DOM order
+  allAnchors.sort(function(a, b){
+    return a.el.compareDocumentPosition(b.el) & 4 ? -1 : 1;
+  });
+
+  // ── Scroll-spy ────────────────────────────────────────────────────────────
+  function updateToc(){
+    var scrollPos      = window.scrollY + 130;
+    var currentSection = null;
+    var currentQ       = null;
+
+    for(var i = allAnchors.length - 1; i >= 0; i--){
+      var a = allAnchors[i];
+
+      // Skip elements hidden by the active filter
+      if(a.el.classList.contains('hidden')) continue;
+
+      var top = a.el.getBoundingClientRect().top + window.scrollY;
+      if(top <= scrollPos){
+        if(a.type === 'question' && !currentQ)       { currentQ       = a; }
+        if(a.type === 'section'  && !currentSection) { currentSection = a; }
+        if(currentQ && currentSection) break;
+      }
+    }
+
+    // Highlight active section button
     document.querySelectorAll('.toc-section-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var key = btn.dataset.tocSection;
-        var list = document.getElementById('toc-qlist-'+key);
-        var expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !expanded);
-        list.classList.toggle('open', !expanded);
-      });
+      btn.classList.toggle('toc-sec-active',
+        !!(currentSection && btn.dataset.tocSection === currentSection.key));
     });
-    
-    // Collect all anchored elements in order for scroll-spy
-    var allAnchors = [];
-    sectionIds.forEach(function(sid, i){
-      var el = document.getElementById(sid);
-      if(el) allAnchors.push({el:el, type:'section', key:sectionKeys[i]});
-    });
-    document.querySelectorAll('.toc-q-link').forEach(function(link){
-      var href = link.getAttribute('href').substring(1);
-      var el = document.getElementById(href);
-      if(el) allAnchors.push({el:el, type:'question', link:link, section:link.dataset.section});
-    });
-    // Sort by document position
-    allAnchors.sort(function(a,b){
-      return a.el.compareDocumentPosition(b.el) & 4 ? -1 : 1;
-    });
-    
-    function updateToc(){
-      var scrollPos = window.scrollY + 130;
-      var currentSection = null;
-      var currentQ = null;
-      for(var i = allAnchors.length-1; i >= 0; i--){
-        var a = allAnchors[i];
-        var top = a.el.getBoundingClientRect().top + window.scrollY;
-        if(top <= scrollPos){
-          if(a.type === 'question' && !currentQ){ currentQ = a; }
-          if(a.type === 'section' && !currentSection){ currentSection = a; }
-          if(currentQ && currentSection) break;
-        }
-      }
-      
-      // Update section buttons
-      document.querySelectorAll('.toc-section-btn').forEach(function(btn){
-        var active = currentSection && btn.dataset.tocSection === currentSection.key;
-        btn.classList.toggle('toc-sec-active', active);
-      });
-      
-      // Update question links
-      document.querySelectorAll('.toc-q-link').forEach(function(link){
-        var active = currentQ && link === currentQ.link;
-        link.classList.toggle('toc-q-active', active);
-      });
-      
-      // Auto-expand section containing current question
-      if(currentSection){
-        var key = currentSection.key;
-        var list = document.getElementById('toc-qlist-'+key);
-        var btn = document.querySelector('.toc-section-btn[data-toc-section="'+key+'"]');
-        if(list && !list.classList.contains('open')){
-          list.classList.add('open');
-          if(btn) btn.setAttribute('aria-expanded','true');
-        }
-        // Collapse others
-        sectionKeys.forEach(function(k){
-          if(k !== key){
-            var otherList = document.getElementById('toc-qlist-'+k);
-            var otherBtn = document.querySelector('.toc-section-btn[data-toc-section="'+k+'"]');
-            if(otherList && otherList.classList.contains('open')){
-              otherList.classList.remove('open');
-              if(otherBtn) otherBtn.setAttribute('aria-expanded','false');
-            }
-          }
-        });
-      }
-    }
-    
-    // Populate TOC link text from each card's question-text (single source of truth)
-    function populateTocText(){
-      document.querySelectorAll('.toc-q-link').forEach(function(link){
-        var id = link.getAttribute('href').substring(1);
-        var card = document.getElementById(id);
-        if(card){
-          var qText = card.querySelector('.question-text');
-          if(qText){
-            var full = qText.textContent.trim();
-            link.textContent = full;
-            link.title = full;
-          }
-        }
-      });
-    }
 
-    window.addEventListener('scroll', updateToc, {passive:true});
-    document.addEventListener('DOMContentLoaded', function(){ populateTocText(); updateToc(); });
-  })();
-    </script>
+    // Highlight active question link
+    document.querySelectorAll('.toc-q-link').forEach(function(link){
+      link.classList.toggle('toc-q-active', !!(currentQ && link === currentQ.link));
+    });
+
+    // Auto-expand the active section's drawer; collapse others
+    if(currentSection){
+      var key = currentSection.key;
+      sectionKeys.forEach(function(k){
+        var list = document.getElementById('toc-qlist-' + k);
+        var btn  = document.querySelector('.toc-section-btn[data-toc-section="' + k + '"]');
+        if(!list || !btn) return;
+        var shouldOpen = (k === key);
+        list.classList.toggle('open', shouldOpen);
+        btn.setAttribute('aria-expanded', shouldOpen);
+      });
+    }
+  }
+
+  // ── Filter logic ──────────────────────────────────────────────────────────
+  function applyFilter(){
+    document.querySelectorAll('.card-item').forEach(function(item){
+      var raceMatch   = activeRace   === 'all' || item.dataset.race   === activeRace;
+      var sourceMatch = activeSource === 'all' || item.dataset.source === activeSource;
+      item.classList.toggle('hidden', !(raceMatch && sourceMatch));
+    });
+
+    document.querySelectorAll('.section-header').forEach(function(hdr){
+      var raceMatch   = activeRace   === 'all' || hdr.dataset.race   === activeRace;
+      var sourceMatch = activeSource === 'all' || hdr.dataset.source === activeSource;
+      hdr.classList.toggle('hidden', !(raceMatch && sourceMatch));
+    });
+
+    // Empty-state banner
+    var anyVisible = Array.from(document.querySelectorAll('.card-item'))
+                          .some(function(i){ return !i.classList.contains('hidden'); });
+    var emptyEl = document.getElementById('filter-empty');
+    if(emptyEl) emptyEl.classList.toggle('visible', !anyVisible);
+
+    // Scroll filter bar into view, then immediately re-run the spy
+    document.getElementById('filter-bar').scrollIntoView({behavior:'smooth', block:'nearest'});
+
+    // Update TOC straight away (no need to wait for a scroll event)
+    updateToc();
+  }
+
+  // ── Populate TOC link text from each card's question-text ────────────────
+  function populateTocText(){
+    document.querySelectorAll('.toc-q-link').forEach(function(link){
+      var id   = link.getAttribute('href').substring(1);
+      var card = document.getElementById(id);
+      if(card){
+        var qText = card.querySelector('.question-text');
+        if(qText){
+          var full = qText.textContent.trim();
+          link.textContent = full;
+          link.title       = full;
+        }
+      }
+    });
+  }
+
+  // ── Wire up filter buttons ────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.filter-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var type = this.dataset.filterType;
+        var val  = this.dataset.filterVal;
+        document.querySelectorAll('.filter-btn[data-filter-type="' + type + '"]')
+                .forEach(function(b){ b.classList.remove('active'); });
+        this.classList.add('active');
+        if(type === 'race') activeRace   = val;
+        else                activeSource = val;
+        applyFilter();
+      });
+    });
+
+    populateTocText();
+    updateToc();
+  });
+
+  window.addEventListener('scroll', updateToc, {passive:true});
+})();
+</script>
 </body>
 </html>
