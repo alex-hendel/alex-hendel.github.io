@@ -25,7 +25,7 @@
 .filter-empty.visible{display:block}
 .sec-source-badge{display:inline-block;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:12px;vertical-align:middle;margin-left:10px;letter-spacing:.02em}
 .ggwash-badge{background:#fef3c7;color:#92400e;border:1px solid #f59e0b}
-.w1d-badge{background:#ede9fe;color:#5b21b6;border:1px solid #8b5cf6}
+.w1d-badge{background:#ede9fe;color:#5b21b6;border:1px solid #8b5cf6}.dc4d-badge{background:#d1fae5;color:#065f46;border:1px solid #34d399}.freedc-badge{background:#fee2e2;color:#991b1b;border:1px solid #f87171}
 
 .dnr-row{background:#f9f9f9;border:1px solid #e8e8e8;border-radius:8px;padding:10px 16px;margin:8px 0 16px;display:flex;align-items:center;gap:8px;font-size:.82rem}
 .dnr-row-label{font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;font-size:.72rem;white-space:nowrap}
@@ -93,6 +93,7 @@
 <button class="filter-btn" data-filter-type="source" data-filter-val="dc4d">
           DC for Democracy
         </button>
+<button class="filter-btn" data-filter-type="source" data-filter-val="freedc">Free DC</button>
 </div>
 </div>
 <div class="page-layout">
@@ -171,6 +172,15 @@
 <li>
 <a class="toc-q-link" data-section="mayor-dc4d" href="#q-mayor-dc4d-4"></a>
 </li>
+</ul>
+</li>
+<li class="toc-section-item">
+<button aria-expanded="false" class="toc-section-btn" data-toc-section="mayor-freedc">
+<span class="toc-chevron">&#9654;</span>
+<span class="toc-sec-label">Mayor<span class="toc-sub">Free DC</span></span>
+</button>
+<ul class="toc-q-list" id="toc-qlist-mayor-freedc">
+<li><a class="toc-q-link" data-section="mayor-freedc" href="#q-mayor-freedc-3"></a></li>
 </ul>
 </li>
 <li class="toc-section-item">
@@ -1625,6 +1635,39 @@
 </div>
 </div>
 </div>
+<div class="section-title section-header" data-race="mayor" data-source="freedc" id="section-mayor-freedc"><h2>Mayor</h2><span class="sec-source-badge freedc-badge">Free DC</span></div>
+<div class="dnr-row card-item" data-race="mayor" data-source="freedc">
+<span class="dnr-row-label">Did not respond:</span>
+<span class="dnr-row-names">Rini Sampath, Vincent Orange</span>
+</div>
+<div class="card card-item" data-race="mayor" data-source="freedc" id="q-mayor-freedc-3">
+<div class="card-header">
+<span class="race-tag">Mayor</span>
+</div>
+<div class="question-text">Statehood &amp; Home Rule: Yes/No policy questions. Candidates were asked whether they would support: eliminating Congressional review of DC laws, local judicial appointments, mayoral control of the DC National Guard, defending all duly passed DC legislation, protecting immigrants from deportation, defending non-citizen voting rights, championing federal workers, gun control, acknowledging criminal justice disparities, opposing Congressional police militarization, and rejecting efforts to ban teaching history.</div>
+<div class="groups-container">
+<div class="group green">
+<div class="group-header">
+<span class="group-icon"></span>
+<div>
+<div class="group-label">Yes to all 11 questions</div>
+<div class="group-sublabel">Both answered yes to all questions: eliminating Congressional review, local judicial appointments, National Guard control, defending all DC laws, protecting immigrants, non-citizen voting rights, championing federal workers, gun control, criminal justice disparities, opposing police militarization, and rejecting history bans.</div>
+</div>
+</div>
+<div class="candidates-row"><div class="candidate"><img alt="Janeese Lewis George" class="headshot" src="headshots/janeese-lewis-george.png"/><div class="cand-name">Janeese Lewis George</div><div class="cand-role">Ward 4 Councilmember</div></div><div class="candidate"><img alt="Gary Goodweather" class="headshot" src="headshots/gary-goodweather.png"/><div class="cand-name">Gary Goodweather</div><div class="cand-role">Candidate</div></div></div>
+</div>
+<div class="group orange">
+<div class="group-header">
+<span class="group-icon"></span>
+<div>
+<div class="group-label">Yes to 5; no response to 6 statehood &amp; autonomy questions</div>
+<div class="group-sublabel">Answered yes to: championing federal workers, gun control, criminal justice disparities, opposing police militarization, and rejecting history bans. Left blank: eliminating Congressional review, local judicial appointments, National Guard control, defending all DC laws, protecting immigrants, and non-citizen voting rights.</div>
+</div>
+</div>
+<div class="candidates-row"><div class="candidate"><img alt="Kenyan McDuffie" class="headshot" src="headshots/kenyan-mcduffie.png"/><div class="cand-name">Kenyan McDuffie</div><div class="cand-role">Former Councilmember</div></div></div>
+</div>
+</div>
+</div>
 <div class="section-title section-header w1d-section" data-race="ward1" data-source="dc4d" id="section-ward1-dc4d"><h2>
               Ward 1 Council
             </h2><span class="sec-source-badge dc4d-badge">DC for Democracy</span></div>
@@ -1884,8 +1927,8 @@
 
   // TOC — collapsible sections + scroll spy
   (function(){
-    var sectionIds = ['section-mayor-ggwash','section-mayor-w1d','section-mayor-dc4d','section-ward1-ggwash','section-ward1-w1d','section-ward1-dc4d'];
-    var sectionKeys = ['mayor-ggwash','mayor-w1d','mayor-dc4d','ward1-ggwash','ward1-w1d','ward1-dc4d'];
+    var sectionIds = ['section-mayor-ggwash','section-mayor-w1d','section-mayor-dc4d','section-mayor-freedc','section-ward1-ggwash','section-ward1-w1d','section-ward1-dc4d'];
+    var sectionKeys = ['mayor-ggwash','mayor-w1d','mayor-dc4d','mayor-freedc','ward1-ggwash','ward1-w1d','ward1-dc4d'];
     
     // Toggle collapse
     document.querySelectorAll('.toc-section-btn').forEach(function(btn){
